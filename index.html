@@ -625,12 +625,10 @@
 </head>
 <body>
 
-  <!-- ============================================================ NAVBAR -->
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background: transparent;">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center justify-between h-18 py-4">
 
-        <!-- Logo -->
         <a href="#" class="flex items-center gap-3">
           <div style="width:36px;height:36px;background:#064e3b;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
             <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -643,7 +641,6 @@
           <div class="logo-corp" id="logo-text">AJ AgriCorp Ventures<span>Western Ghats Estate</span></div>
         </a>
 
-        <!-- Desktop Nav -->
         <div class="hidden md:flex items-center gap-8">
           <a href="#estate" class="nav-link">Our Estate</a>
           <a href="#whiff-whistle" class="nav-link">Whiff &amp; Whistle</a>
@@ -652,7 +649,6 @@
           <a href="#rfq" class="btn-primary" style="padding:10px 20px;font-size:0.75rem;">Request Quote</a>
         </div>
 
-        <!-- Mobile Hamburger -->
         <button id="menu-toggle" class="md:hidden flex flex-col gap-1.5 p-1.5" aria-label="Menu">
           <span class="block w-6 h-0.5 bg-emerald-800 transition-all" id="m1"></span>
           <span class="block w-4 h-0.5 bg-emerald-800 transition-all" id="m2"></span>
@@ -662,7 +658,6 @@
     </div>
   </nav>
 
-  <!-- Mobile Menu Overlay -->
   <div id="mobile-menu" role="dialog" aria-modal="true">
     <button id="menu-close" class="absolute top-6 right-6 text-cream opacity-60 hover:opacity-100" aria-label="Close menu">
       <i data-lucide="x" style="width:28px;height:28px;"></i>
@@ -675,12 +670,10 @@
     <a href="#contact"       class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
   </div>
 
-  <!-- ============================================================ HERO -->
   <section class="hero-bg min-h-screen flex flex-col justify-center relative pt-20 pb-16" id="home">
     <div class="hero-pattern"></div>
     <div class="hero-pattern-2"></div>
 
-    <!-- Vertical label -->
     <div class="absolute left-8 bottom-1/3 hidden lg:flex items-center gap-3" style="transform: rotate(-90deg); transform-origin: left center;">
       <span style="width:40px;height:1px;background:rgba(248,245,239,0.25);display:inline-block;"></span>
       <span style="font-size:0.65rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(248,245,239,0.4);">Est. Western Ghats</span>
@@ -689,25 +682,21 @@
     <div class="max-w-7xl mx-auto px-6 lg:px-8 w-full relative z-10">
       <div class="grid lg:grid-cols-12 gap-12 items-center">
         <div class="lg:col-span-7">
-          <!-- Eyebrow -->
           <div class="flex items-center gap-3 mb-8">
             <div style="width:1px;height:32px;background:rgba(245,158,11,0.5);"></div>
             <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,158,11,0.85);">Single-Origin · Premium Grade · Direct Estate</span>
           </div>
 
-          <!-- Title -->
           <h1 style="font-family:'Cormorant Garamond',Georgia,serif;line-height:1.0;">
             <div class="hero-title-line"><span style="font-size:clamp(3rem,6vw,5.5rem);font-weight:600;color:#f8f5ef;display:block;">Cultivating</span></div>
             <div class="hero-title-line"><span style="font-size:clamp(3rem,6vw,5.5rem);font-weight:600;color:#f59e0b;display:block;">Excellence</span></div>
             <div class="hero-title-line"><span style="font-size:clamp(3rem,6vw,5.5rem);font-weight:300;color:rgba(248,245,239,0.85);font-style:italic;display:block;">at Scale.</span></div>
           </h1>
 
-          <!-- Subtitle -->
           <p class="hero-sub mt-8 max-w-xl" style="font-size:1.0625rem;line-height:1.75;color:rgba(248,245,239,0.72);font-weight:300;">
             From our pristine estate to global supply chains, AJ AgriCorp Ventures delivers premium, single-origin cardamom — traceable, consistent, and cultivated with precision.
           </p>
 
-          <!-- CTAs -->
           <div class="hero-ctas flex flex-wrap gap-4 mt-10">
             <a href="#whiff-whistle" class="btn-primary">
               <i data-lucide="shopping-bag" style="width:15px;height:15px;"></i>
@@ -720,7 +709,6 @@
           </div>
         </div>
 
-        <!-- Stats panel -->
         <div class="lg:col-span-5 flex justify-end">
           <div style="border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);backdrop-filter:blur(8px);padding:36px;max-width:340px;width:100%;">
             <div style="font-size:0.65rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-bottom:28px;">Estate At A Glance</div>
@@ -750,7 +738,6 @@
               </div>
             </div>
 
-            <!-- Location chip -->
             <div class="flex items-center gap-2 mt-8 pt-6" style="border-top:1px solid rgba(255,255,255,0.06);">
               <i data-lucide="map-pin" style="width:14px;height:14px;color:#f59e0b;flex-shrink:0;"></i>
               <span style="font-size:0.75rem;color:rgba(248,245,239,0.55);letter-spacing:0.06em;">Idukki District, Kerala · Western Ghats</span>
@@ -760,7 +747,6 @@
       </div>
     </div>
 
-    <!-- Scroll hint -->
     <div class="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2" style="animation:fadeIn 1s ease 1.8s both;">
       <span style="font-size:0.6rem;letter-spacing:0.2em;text-transform:uppercase;color:rgba(248,245,239,0.35);">Scroll</span>
       <div style="width:1px;height:28px;background:rgba(248,245,239,0.2);animation:scrollPulse 2s ease infinite;"></div>
@@ -774,12 +760,10 @@
     }
   </style>
 
-  <!-- ============================================================ ESTATE SECTION -->
   <section id="estate" class="estate-bg py-24 lg:py-32">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
 
-        <!-- Text -->
         <div class="reveal-left">
           <div class="section-label mb-5">Our Estate</div>
           <h2 class="font-display" style="font-size:clamp(2.2rem,4vw,3.4rem);font-weight:600;line-height:1.1;color:#0f172a;">
@@ -793,7 +777,6 @@
             Every capsule is hand-harvested at peak maturity, sun-cured using heritage techniques, and graded through a rigorous quality matrix — ensuring that what reaches you, whether retail or bulk, carries the full integrity of single-origin provenance.
           </p>
 
-          <!-- Features grid -->
           <div class="grid grid-cols-2 gap-4 mt-8">
             <div class="feature-card reveal-delay-1">
               <div class="flex items-start gap-3 p-4" style="background:#fff;border:1px solid rgba(6,78,59,0.08);">
@@ -802,7 +785,7 @@
                 </div>
                 <div>
                   <div class="font-body" style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0f172a;">Altitude</div>
-                  <div class="font-body" style="font-size:0.8rem;color:#64748b;margin-top:2px;">800–1200m elevation</div>
+                  <div class="font-body" style="font-size:0.8rem;color:#64748b;margin-top:2px;">1100–1200m elevation</div>
                 </div>
               </div>
             </div>
@@ -842,12 +825,9 @@
           </div>
         </div>
 
-        <!-- Visual panel -->
         <div class="reveal-right">
           <div class="relative">
-            <!-- Main visual placeholder -->
             <div style="background:linear-gradient(135deg,#064e3b,#0a6b4d,#047857);aspect-ratio:4/5;position:relative;overflow:hidden;max-width:440px;margin-left:auto;">
-              <!-- Decorative botanical SVG -->
               <svg viewBox="0 0 400 500" xmlns="http://www.w3.org/2000/svg" style="position:absolute;inset:0;width:100%;height:100%;opacity:0.15;">
                 <ellipse cx="200" cy="250" rx="60" ry="130" fill="none" stroke="rgba(248,245,239,0.8)" stroke-width="1.5"/>
                 <ellipse cx="200" cy="250" rx="90" ry="190" fill="none" stroke="rgba(248,245,239,0.4)" stroke-width="1"/>
@@ -860,7 +840,6 @@
                 <circle cx="200" cy="320" r="8" fill="rgba(245,158,11,0.4)"/>
               </svg>
 
-              <!-- Center text -->
               <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
                 <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:4rem;font-weight:600;color:#f8f5ef;line-height:1;">10</div>
                 <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,158,11,0.8);margin-top:6px;">Acres of Heritage</div>
@@ -870,13 +849,11 @@
               </div>
             </div>
 
-            <!-- Floating badge -->
             <div style="position:absolute;bottom:-20px;left:-20px;background:#f59e0b;padding:20px 24px;">
               <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.6rem;font-weight:700;color:#052e16;line-height:1;">100%</div>
               <div style="font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#052e16;margin-top:2px;">Single Origin</div>
             </div>
 
-            <!-- Certification badge -->
             <div style="position:absolute;top:20px;right:-16px;background:#fff;border:1px solid rgba(6,78,59,0.12);padding:14px 18px;box-shadow:0 8px 24px rgba(0,0,0,0.08);">
               <i data-lucide="award" style="width:20px;height:20px;color:#047857;display:block;margin:0 auto 6px;"></i>
               <div style="font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#047857;text-align:center;">FSSAI<br/>Compliant</div>
@@ -887,14 +864,11 @@
     </div>
   </section>
 
-  <!-- Divider -->
   <div class="divider-gold" style="margin:0;"></div>
 
-  <!-- ============================================================ WHIFF & WHISTLE -->
   <section id="whiff-whistle" class="py-24 lg:py-36" style="background:#fff;">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
-      <!-- Section header -->
       <div class="max-w-3xl mx-auto text-center mb-16 reveal">
         <div class="section-label justify-center mb-5">Retail Brand</div>
         <h2 class="font-display" style="font-size:clamp(2.4rem,4.5vw,3.8rem);font-weight:600;line-height:1.05;color:#0f172a;">
@@ -910,18 +884,14 @@
         </p>
       </div>
 
-      <!-- Product Cards -->
       <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
 
-        <!-- Card 1: Emperor Green 8mm -->
         <div class="product-card reveal reveal-delay-1">
-          <!-- Visual top -->
           <div style="background:linear-gradient(135deg,#052e16,#064e3b);padding:36px 28px;position:relative;overflow:hidden;">
             <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(245,158,11,0.07);"></div>
             <div class="grade-badge" style="background:rgba(245,158,11,0.15);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);margin-bottom:16px;">Flagship Grade</div>
             <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Emperor<br/>Green</div>
             <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-top:8px;">8.0mm Grade · Bold Aromatic</div>
-            <!-- Capsule icon -->
             <div style="position:absolute;bottom:20px;right:24px;">
               <svg width="44" height="64" viewBox="0 0 44 64" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <ellipse cx="22" cy="32" rx="16" ry="28" fill="none" stroke="rgba(245,158,11,0.35)" stroke-width="1.5"/>
@@ -931,7 +901,6 @@
               </svg>
             </div>
           </div>
-          <!-- Card body -->
           <div style="padding:24px;">
             <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
               <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
@@ -954,7 +923,7 @@
             <div class="flex items-center justify-between mb-4">
               <div>
                 <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Starting from</div>
-                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ Premium</div>
+                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 6,000<span style="font-size:1rem;font-weight:400;">/kg</span></div>
               </div>
               <div class="tag-chip">Best Seller</div>
             </div>
@@ -965,7 +934,6 @@
           </div>
         </div>
 
-        <!-- Card 2: Premium Green 7.5mm -->
         <div class="product-card reveal reveal-delay-2">
           <div style="background:linear-gradient(135deg,#064e3b,#047857);padding:36px 28px;position:relative;overflow:hidden;">
             <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,0.04);"></div>
@@ -1002,7 +970,7 @@
             <div class="flex items-center justify-between mb-4">
               <div>
                 <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Starting from</div>
-                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ Select</div>
+                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 5,000<span style="font-size:1rem;font-weight:400;">/kg</span></div>
               </div>
               <div class="tag-chip">Popular</div>
             </div>
@@ -1013,7 +981,6 @@
           </div>
         </div>
 
-        <!-- Card 3: Estate Reserve Blend -->
         <div class="product-card reveal reveal-delay-3 md:col-span-2 lg:col-span-1">
           <div style="background:linear-gradient(135deg,#1a0a00,#7c2d12,#b45309);padding:36px 28px;position:relative;overflow:hidden;">
             <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(245,158,11,0.1);"></div>
@@ -1048,7 +1015,7 @@
             <div class="flex items-center justify-between mb-4">
               <div>
                 <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Limited Batch</div>
-                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ Reserve</div>
+                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 4,500<span style="font-size:1rem;font-weight:400;">/kg</span></div>
               </div>
               <div class="tag-chip" style="background:rgba(180,83,9,0.1);color:#b45309;border-color:rgba(180,83,9,0.2);">Gift Set</div>
             </div>
@@ -1060,7 +1027,6 @@
         </div>
       </div>
 
-      <!-- Brand footnote -->
       <div class="flex items-center justify-center gap-3 reveal" style="margin-top:8px;">
         <i data-lucide="info" style="width:14px;height:14px;color:#94a3b8;flex-shrink:0;"></i>
         <p class="font-body" style="font-size:0.78rem;color:#94a3b8;text-align:center;">Whiff &amp; Whistle is a registered consumer brand of AJ AgriCorp Ventures. All products are FSSAI licensed and packed at our estate facility.</p>
@@ -1068,13 +1034,11 @@
     </div>
   </section>
 
-  <!-- ============================================================ B2B BULK SECTION -->
   <section id="bulk" class="b2b-bg py-24 lg:py-36 relative">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
 
       <div class="grid lg:grid-cols-2 gap-16 items-start">
 
-        <!-- Left: Text content -->
         <div>
           <div class="section-label mb-5" style="color:rgba(245,158,11,0.8);">
             <span style="background:rgba(245,158,11,0.4);width:24px;height:1px;display:inline-block;margin-right:8px;"></span>
@@ -1088,7 +1052,6 @@
             AJ AgriCorp Ventures operates a dedicated bulk sourcing vertical for institutional buyers, FMCG companies, spice exporters, restaurant chains, and contract procurement desks. Our vertically integrated model — from cultivation to cured delivery — eliminates intermediaries and guarantees traceability at every step.
           </p>
 
-          <!-- Process timeline -->
           <div class="mt-10 flex flex-col gap-0 reveal-left">
             <div class="flex gap-4">
               <div class="flex flex-col items-center">
@@ -1107,7 +1070,7 @@
               </div>
               <div style="padding-bottom:24px;">
                 <div class="font-body" style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Step 02 — Sample Dispatch</div>
-                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Receive graded samples with COA and lab certification within 5–7 days.</div>
+                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Receive 50gm graded samples with COA and lab certification within 5–7 days.</div>
               </div>
             </div>
             <div class="flex gap-4">
@@ -1132,7 +1095,6 @@
           </div>
         </div>
 
-        <!-- Right: Capabilities grid -->
         <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
           <div class="capability-card p-6 reveal reveal-delay-1">
             <div style="width:44px;height:44px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
@@ -1184,7 +1146,6 @@
         </div>
       </div>
 
-      <!-- Volume Tiers -->
       <div class="mt-20">
         <div class="font-body text-center reveal" style="font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.6);margin-bottom:24px;">Typical Order Tiers</div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
@@ -1209,12 +1170,10 @@
     </div>
   </section>
 
-  <!-- ============================================================ RFQ FORM -->
   <section id="rfq" class="rfq-section py-24 lg:py-32" style="background:linear-gradient(160deg,#f8f5ef 0%,#f2ead9 100%);">
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
       <div class="grid lg:grid-cols-5 gap-12 items-start">
 
-        <!-- Left: Copy -->
         <div class="lg:col-span-2 reveal-left">
           <div class="section-label mb-5">Request a Quote</div>
           <h2 class="font-display" style="font-size:clamp(2rem,3.5vw,3rem);font-weight:600;line-height:1.1;color:#0f172a;">
@@ -1224,19 +1183,18 @@
             Fill in your procurement requirements and our sourcing team will respond within one business day with pricing, grade availability, and sample dispatch details.
           </p>
 
-          <!-- Contact quick reference -->
           <div class="mt-10 flex flex-col gap-4">
-            <a href="mailto:sourcing@ajagricorp.in" class="flex items-center gap-3 font-body" style="font-size:0.85rem;color:#475569;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#047857'" onmouseout="this.style.color='#475569'">
+            <a href="mailto:mearunjos@gmail.com" class="flex items-center gap-3 font-body" style="font-size:0.85rem;color:#475569;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#047857'" onmouseout="this.style.color='#475569'">
               <div style="width:36px;height:36px;background:rgba(4,120,87,0.08);border:1px solid rgba(4,120,87,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                 <i data-lucide="mail" style="width:16px;height:16px;color:#047857;"></i>
               </div>
-              sourcing@ajagricorp.in
+              mearunjos@gmail.com
             </a>
-            <a href="tel:+919400000000" class="flex items-center gap-3 font-body" style="font-size:0.85rem;color:#475569;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#047857'" onmouseout="this.style.color='#475569'">
+            <a href="tel:+919747370201" class="flex items-center gap-3 font-body" style="font-size:0.85rem;color:#475569;text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#047857'" onmouseout="this.style.color='#475569'">
               <div style="width:36px;height:36px;background:rgba(4,120,87,0.08);border:1px solid rgba(4,120,87,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
                 <i data-lucide="phone" style="width:16px;height:16px;color:#047857;"></i>
               </div>
-              +91 94000 00000 (Sourcing Desk)
+              +91 97473 70201 (Sourcing Desk)
             </a>
             <div class="flex items-center gap-3 font-body" style="font-size:0.85rem;color:#475569;">
               <div style="width:36px;height:36px;background:rgba(4,120,87,0.08);border:1px solid rgba(4,120,87,0.12);display:flex;align-items:center;justify-content:center;flex-shrink:0;">
@@ -1246,7 +1204,6 @@
             </div>
           </div>
 
-          <!-- Trust badges -->
           <div class="mt-10 pt-8" style="border-top:1px solid rgba(6,78,59,0.1);">
             <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#94a3b8;margin-bottom:12px;">Registrations &amp; Compliance</div>
             <div class="flex flex-wrap gap-2">
@@ -1258,7 +1215,6 @@
           </div>
         </div>
 
-        <!-- Right: Form -->
         <div class="lg:col-span-3 reveal-right">
           <div class="rfq-card" style="padding:40px;">
             <div class="font-body" style="font-size:0.7rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#047857;margin-bottom:24px;">Bulk RFQ Form</div>
@@ -1326,7 +1282,6 @@
                 <textarea id="rfq-message" class="form-field" rows="4" placeholder="Please share any additional requirements — moisture content, packaging type, delivery location, target price band, certification needs, or any other specifications…" style="resize:vertical;min-height:100px;"></textarea>
               </div>
 
-              <!-- Privacy note -->
               <div class="flex gap-2 mb-6">
                 <i data-lucide="lock" style="width:13px;height:13px;color:#94a3b8;flex-shrink:0;margin-top:2px;"></i>
                 <p class="font-body" style="font-size:0.72rem;color:#94a3b8;line-height:1.6;">Your information is used solely for procurement communication. We do not share or sell enquiry data to third parties. View our <a href="#" style="color:#047857;text-decoration:underline;">Privacy Policy</a>.</p>
@@ -1343,14 +1298,11 @@
     </div>
   </section>
 
-  <!-- ============================================================ FOOTER -->
   <footer id="contact" class="footer-bg pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
-      <!-- Top footer grid -->
       <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10 pb-12" style="border-bottom:1px solid rgba(255,255,255,0.05);">
 
-        <!-- Col 1: Brand -->
         <div>
           <div class="flex items-center gap-3 mb-5">
             <div style="width:32px;height:32px;background:#064e3b;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
@@ -1377,7 +1329,6 @@
           </div>
         </div>
 
-        <!-- Col 2: Quick Links -->
         <div>
           <div class="font-body" style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-bottom:16px;">Navigation</div>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
@@ -1389,7 +1340,6 @@
           </ul>
         </div>
 
-        <!-- Col 3: Contact -->
         <div>
           <div class="font-body" style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-bottom:16px;">Contact Us</div>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:12px;">
@@ -1399,20 +1349,15 @@
             </li>
             <li class="flex items-center gap-3">
               <i data-lucide="mail" style="width:14px;height:14px;color:rgba(245,158,11,0.6);flex-shrink:0;"></i>
-              <a href="mailto:hello@ajagricorp.in" class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.45);text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='rgba(248,245,239,0.45)'">hello@ajagricorp.in</a>
-            </li>
-            <li class="flex items-center gap-3">
-              <i data-lucide="mail" style="width:14px;height:14px;color:rgba(245,158,11,0.6);flex-shrink:0;"></i>
-              <a href="mailto:sourcing@ajagricorp.in" class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.45);text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='rgba(248,245,239,0.45)'">sourcing@ajagricorp.in</a>
+              <a href="mailto:mearunjos@gmail.com" class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.45);text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='rgba(248,245,239,0.45)'">mearunjos@gmail.com</a>
             </li>
             <li class="flex items-center gap-3">
               <i data-lucide="phone" style="width:14px;height:14px;color:rgba(245,158,11,0.6);flex-shrink:0;"></i>
-              <a href="tel:+919400000000" class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.45);text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='rgba(248,245,239,0.45)'">+91 94000 00000</a>
+              <a href="tel:+919747370201" class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.45);text-decoration:none;" onmouseover="this.style.color='#f59e0b'" onmouseout="this.style.color='rgba(248,245,239,0.45)'">+91 97473 70201</a>
             </li>
           </ul>
         </div>
 
-        <!-- Col 4: Compliance & Identity -->
         <div>
           <div class="font-body" style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-bottom:16px;">Compliance &amp; Identity</div>
           <div class="flex flex-col gap-3">
@@ -1432,7 +1377,6 @@
         </div>
       </div>
 
-      <!-- Bottom bar -->
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8">
         <div class="font-body" style="font-size:0.73rem;color:rgba(248,245,239,0.3);text-align:center;">
           © 2025 AJ AgriCorp Ventures. All rights reserved. | Whiff &amp; Whistle is a registered consumer brand of AJ AgriCorp Ventures.
@@ -1451,7 +1395,6 @@
     </div>
   </footer>
 
-  <!-- ============================================================ SCRIPTS -->
   <script>
     // Safe wrapper — runs after DOM is parsed and Lucide is loaded
     function initIcons() {
