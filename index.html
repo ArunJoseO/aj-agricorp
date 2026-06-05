@@ -6,31 +6,32 @@
   "@context": "https://schema.org",
   "@type": "Corporation",
   "name": "AJ AgriCorp Ventures",
-  "alternateName": "Whiff and Whistle",
+  "alternateName": ["Whiff and Whistle", "Bite and Bloom"],
   "url": "https://arunjoseo.github.io/aj-agricorp/",
-  "description": "Enterprise-level agricultural commodity player specializing in premium, single-origin green cardamom sourcing, custom curing, and bulk export.",
+  "description": "Enterprise-level agricultural commodity player specializing in premium, single-origin spices from the Western Ghats — cardamom, black pepper, and beyond. Custom curing, lot-level traceability, and bulk export.",
   "address": {
     "@type": "PostalAddress",
     "addressRegion": "Kerala",
     "addressCountry": "India"
   },
-  "knowsAbout": ["Cardamom Farming", "Agricultural Logistics", "Spice Export", "Commodity Sourcing"]
+  "knowsAbout": ["Cardamom Farming", "Black Pepper Sourcing", "Agricultural Logistics", "Spice Export", "Commodity Sourcing", "Tellicherry Pepper", "Malabar Spices"]
 }
 </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>AJ AgriCorp Ventures | Premium Single-Origin Cardamom</title>
-  <!-- Primary SEO Meta Tags -->
-<meta name="description" content="AJ AgriCorp Ventures is a leading enterprise-level supplier of premium, single-origin cardamom from the Western Ghats, Kerala. Request a bulk B2B quote or explore Whiff & Whistle retail.">
-<meta name="keywords" content="bulk cardamom supplier, green cardamom exporter India, wholesale cardamom Kerala, premium cardamom 8mm, single origin cardamom, Whiff and Whistle cardamom">
+  <title>AJ AgriCorp Ventures | Premium Single-Origin Spices — Cardamom & Black Pepper</title>
 
-<!-- Open Graph / Facebook / WhatsApp (Controls how your link looks when shared) -->
-<meta property="og:type" content="website">
-<meta property="og:url" content="https://arunjoseo.github.io/aj-agricorp/">
-<meta property="og:title" content="AJ AgriCorp Ventures | Premium Cardamom Supply Chain at Scale">
-<meta property="og:description" content="Sourcing premium single-origin cardamom directly from our dedicated 10-acre estate in the Western Ghats. Fast B2B RFQ turnaround.">
-<meta property="og:image" content="https://arunjoseo.github.io/aj-agricorp/assets/og-preview.jpg"> <!-- Replace with a real image link later -->
-  <meta name="description" content="AJ AgriCorp Ventures — Premium single-origin cardamom from our estate in the Western Ghats. Retail brand: Whiff & Whistle. Bulk sourcing available." />
+  <!-- Primary SEO Meta Tags -->
+  <meta name="description" content="AJ AgriCorp Ventures is a leading multi-commodity spice enterprise sourcing premium single-origin cardamom and Tellicherry black pepper from the Western Ghats, Kerala. Request a bulk B2B quote or explore our retail brands: Whiff & Whistle and Bite & Bloom.">
+  <meta name="keywords" content="bulk cardamom supplier, green cardamom exporter India, Tellicherry pepper exporter, TGSEB black pepper Kerala, wholesale spices India, multi-commodity spice sourcing, Whiff and Whistle cardamom, Bite and Bloom pepper, Western Ghats spices">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://arunjoseo.github.io/aj-agricorp/">
+  <meta property="og:title" content="AJ AgriCorp Ventures | Premium Spice Supply Chain at Scale">
+  <meta property="og:description" content="Sourcing premium single-origin cardamom and black pepper directly from our estates in the Western Ghats. Two consumer brands. One enterprise backbone. Fast B2B RFQ turnaround.">
+  <meta property="og:image" content="https://arunjoseo.github.io/aj-agricorp/assets/og-preview.jpg">
+
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/lucide@0.383.0/dist/umd/lucide.min.js"></script>
   <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -42,30 +43,9 @@
       theme: {
         extend: {
           colors: {
-            emerald: {
-              950: '#052e16',
-              900: '#064e3b',
-              800: '#065f46',
-              750: '#0a6b4d',
-              700: '#047857',
-              600: '#059669',
-              500: '#10b981',
-            },
-            gold: {
-              50:  '#fffbeb',
-              100: '#fef3c7',
-              200: '#fde68a',
-              300: '#fcd34d',
-              400: '#fbbf24',
-              500: '#f59e0b',
-              600: '#d97706',
-            },
-            slate: {
-              950: '#0f172a',
-              900: '#1e293b',
-              800: '#1a2332',
-              750: '#1e293b',
-            },
+            emerald: { 950:'#052e16', 900:'#064e3b', 800:'#065f46', 750:'#0a6b4d', 700:'#047857', 600:'#059669', 500:'#10b981' },
+            gold: { 50:'#fffbeb', 100:'#fef3c7', 200:'#fde68a', 300:'#fcd34d', 400:'#fbbf24', 500:'#f59e0b', 600:'#d97706' },
+            slate: { 950:'#0f172a', 900:'#1e293b', 800:'#1a2332', 750:'#1e293b' },
             cream: '#f8f5ef',
             parchment: '#f2ead9',
           },
@@ -91,7 +71,6 @@
       overflow-x: hidden;
     }
 
-    /* Noise texture overlay */
     body::before {
       content: '';
       position: fixed;
@@ -101,14 +80,11 @@
       z-index: 9999;
     }
 
-    /* ---- TYPOGRAPHY ---- */
     .font-display { font-family: 'Cormorant Garamond', Georgia, serif; }
     .font-body    { font-family: 'DM Sans', system-ui, sans-serif; }
 
     /* ---- NAVIGATION ---- */
-    #navbar {
-      transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease;
-    }
+    #navbar { transition: background 0.4s ease, box-shadow 0.4s ease, backdrop-filter 0.4s ease; }
     #navbar.scrolled {
       background: rgba(248, 245, 239, 0.92) !important;
       backdrop-filter: blur(16px);
@@ -169,14 +145,9 @@
       border: 1px solid rgba(251,191,36,0.08);
       animation: rotateRing 25s linear infinite reverse;
     }
-    @keyframes rotateRing {
-      from { transform: rotate(0deg); }
-      to   { transform: rotate(360deg); }
-    }
+    @keyframes rotateRing { from { transform: rotate(0deg); } to { transform: rotate(360deg); } }
 
-    .hero-title-line {
-      overflow: hidden;
-    }
+    .hero-title-line { overflow: hidden; }
     .hero-title-line span {
       display: inline-block;
       transform: translateY(100%);
@@ -184,28 +155,13 @@
     }
     .hero-title-line:nth-child(2) span { animation-delay: 0.12s; }
     .hero-title-line:nth-child(3) span { animation-delay: 0.24s; }
+    @keyframes slideUp { to { transform: translateY(0); } }
 
-    @keyframes slideUp {
-      to { transform: translateY(0); }
-    }
-    .hero-sub {
-      opacity: 0;
-      transform: translateY(16px);
-      animation: fadeUp 0.8s ease 0.6s forwards;
-    }
-    .hero-ctas {
-      opacity: 0;
-      transform: translateY(16px);
-      animation: fadeUp 0.8s ease 0.85s forwards;
-    }
-    @keyframes fadeUp {
-      to { opacity: 1; transform: translateY(0); }
-    }
+    .hero-sub { opacity: 0; transform: translateY(16px); animation: fadeUp 0.8s ease 0.6s forwards; }
+    .hero-ctas { opacity: 0; transform: translateY(16px); animation: fadeUp 0.8s ease 0.85s forwards; }
+    @keyframes fadeUp { to { opacity: 1; transform: translateY(0); } }
 
-    .hero-stat {
-      opacity: 0;
-      animation: fadeIn 0.6s ease forwards;
-    }
+    .hero-stat { opacity: 0; animation: fadeIn 0.6s ease forwards; }
     .hero-stat:nth-child(1) { animation-delay: 1.1s; }
     .hero-stat:nth-child(2) { animation-delay: 1.25s; }
     .hero-stat:nth-child(3) { animation-delay: 1.4s; }
@@ -213,265 +169,121 @@
 
     /* ---- BUTTONS ---- */
     .btn-primary {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 28px;
-      background: #f59e0b;
-      color: #052e16;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.8125rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; background: #f59e0b; color: #052e16;
+      font-family: 'DM Sans', sans-serif; font-size: 0.8125rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s; text-decoration: none;
     }
-    .btn-primary:hover {
-      background: #fbbf24;
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(245,158,11,0.35);
-    }
+    .btn-primary:hover { background: #fbbf24; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(245,158,11,0.35); }
+
     .btn-outline {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 13px 28px;
-      background: transparent;
-      color: #f8f5ef;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.8125rem;
-      font-weight: 500;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border: 1px solid rgba(248,245,239,0.4);
-      cursor: pointer;
-      transition: border-color 0.2s, background 0.2s, transform 0.15s;
-      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 13px 28px; background: transparent; color: #f8f5ef;
+      font-family: 'DM Sans', sans-serif; font-size: 0.8125rem; font-weight: 500;
+      letter-spacing: 0.08em; text-transform: uppercase; border: 1px solid rgba(248,245,239,0.4);
+      cursor: pointer; transition: border-color 0.2s, background 0.2s, transform 0.15s; text-decoration: none;
     }
-    .btn-outline:hover {
-      border-color: rgba(248,245,239,0.8);
-      background: rgba(248,245,239,0.08);
-      transform: translateY(-1px);
-    }
+    .btn-outline:hover { border-color: rgba(248,245,239,0.8); background: rgba(248,245,239,0.08); transform: translateY(-1px); }
+
     .btn-dark {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 14px 28px;
-      background: #064e3b;
-      color: #f8f5ef;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.8125rem;
-      font-weight: 600;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 14px 28px; background: #064e3b; color: #f8f5ef;
+      font-family: 'DM Sans', sans-serif; font-size: 0.8125rem; font-weight: 600;
+      letter-spacing: 0.08em; text-transform: uppercase; border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s; text-decoration: none;
     }
-    .btn-dark:hover {
-      background: #047857;
-      transform: translateY(-1px);
-      box-shadow: 0 8px 24px rgba(6,78,59,0.4);
-    }
+    .btn-dark:hover { background: #047857; transform: translateY(-1px); box-shadow: 0 8px 24px rgba(6,78,59,0.4); }
+
     .btn-amazon {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      padding: 11px 22px;
-      background: #FF9900;
-      color: #0f172a;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.06em;
-      text-transform: uppercase;
-      border: none;
-      cursor: pointer;
-      transition: background 0.2s, transform 0.15s, box-shadow 0.2s;
-      text-decoration: none;
+      display: inline-flex; align-items: center; gap: 8px;
+      padding: 11px 22px; background: #FF9900; color: #0f172a;
+      font-family: 'DM Sans', sans-serif; font-size: 0.75rem; font-weight: 700;
+      letter-spacing: 0.06em; text-transform: uppercase; border: none; cursor: pointer;
+      transition: background 0.2s, transform 0.15s, box-shadow 0.2s; text-decoration: none;
     }
-    .btn-amazon:hover {
-      background: #FFB347;
-      transform: translateY(-1px);
-      box-shadow: 0 6px 20px rgba(255,153,0,0.4);
-    }
+    .btn-amazon:hover { background: #FFB347; transform: translateY(-1px); box-shadow: 0 6px 20px rgba(255,153,0,0.4); }
 
     /* ---- SECTION LABELS ---- */
     .section-label {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.6875rem;
-      font-weight: 600;
-      letter-spacing: 0.18em;
-      text-transform: uppercase;
-      color: #047857;
+      display: inline-flex; align-items: center; gap: 8px;
+      font-family: 'DM Sans', sans-serif; font-size: 0.6875rem; font-weight: 600;
+      letter-spacing: 0.18em; text-transform: uppercase; color: #047857;
     }
     .section-label::before {
-      content: '';
-      display: inline-block;
-      width: 24px;
-      height: 1px;
-      background: #047857;
+      content: ''; display: inline-block; width: 24px; height: 1px; background: #047857;
     }
 
     /* ---- PRODUCT CARDS ---- */
     .product-card {
-      background: #fff;
-      border: 1px solid rgba(6,78,59,0.1);
+      background: #fff; border: 1px solid rgba(6,78,59,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-      position: relative;
-      overflow: hidden;
+      position: relative; overflow: hidden;
     }
     .product-card::before {
-      content: '';
-      position: absolute;
-      inset: 0;
+      content: ''; position: absolute; inset: 0;
       background: linear-gradient(135deg, rgba(6,78,59,0.02), transparent);
-      opacity: 0;
-      transition: opacity 0.3s;
+      opacity: 0; transition: opacity 0.3s;
     }
-    .product-card:hover {
-      transform: translateY(-6px);
-      box-shadow: 0 24px 48px rgba(6,78,59,0.12);
-      border-color: rgba(6,78,59,0.25);
-    }
+    .product-card:hover { transform: translateY(-6px); box-shadow: 0 24px 48px rgba(6,78,59,0.12); border-color: rgba(6,78,59,0.25); }
     .product-card:hover::before { opacity: 1; }
 
-    .grade-badge {
-      display: inline-block;
-      padding: 3px 10px;
-      font-size: 0.65rem;
-      font-weight: 600;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-    }
+    .grade-badge { display: inline-block; padding: 3px 10px; font-size: 0.65rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; }
 
     /* ---- FEATURE ICONS ---- */
     .feature-icon-wrap {
-      width: 52px;
-      height: 52px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      background: rgba(6,78,59,0.08);
-      border: 1px solid rgba(6,78,59,0.12);
-      flex-shrink: 0;
+      width: 52px; height: 52px; display: flex; align-items: center; justify-content: center;
+      background: rgba(6,78,59,0.08); border: 1px solid rgba(6,78,59,0.12); flex-shrink: 0;
       transition: background 0.2s, border-color 0.2s;
     }
-    .feature-card:hover .feature-icon-wrap {
-      background: rgba(6,78,59,0.14);
-      border-color: rgba(6,78,59,0.2);
-    }
+    .feature-card:hover .feature-icon-wrap { background: rgba(6,78,59,0.14); border-color: rgba(6,78,59,0.2); }
 
     /* ---- B2B SECTION ---- */
     .b2b-bg {
       background: linear-gradient(160deg, #0f172a 0%, #052e16 45%, #064e3b 100%);
-      position: relative;
-      overflow: hidden;
+      position: relative; overflow: hidden;
     }
     .b2b-bg::before {
-      content: '';
-      position: absolute;
-      top: -200px; right: -200px;
-      width: 600px; height: 600px;
+      content: ''; position: absolute; top: -200px; right: -200px; width: 600px; height: 600px;
       background: radial-gradient(circle, rgba(251,191,36,0.06) 0%, transparent 70%);
     }
     .b2b-bg::after {
-      content: '';
-      position: absolute;
-      bottom: -100px; left: -100px;
-      width: 400px; height: 400px;
+      content: ''; position: absolute; bottom: -100px; left: -100px; width: 400px; height: 400px;
       background: radial-gradient(circle, rgba(16,185,129,0.06) 0%, transparent 70%);
     }
 
     .capability-card {
-      border: 1px solid rgba(255,255,255,0.08);
-      background: rgba(255,255,255,0.04);
-      backdrop-filter: blur(4px);
-      transition: border-color 0.3s, background 0.3s, transform 0.3s;
+      border: 1px solid rgba(255,255,255,0.08); background: rgba(255,255,255,0.04);
+      backdrop-filter: blur(4px); transition: border-color 0.3s, background 0.3s, transform 0.3s;
     }
-    .capability-card:hover {
-      border-color: rgba(251,191,36,0.2);
-      background: rgba(255,255,255,0.07);
-      transform: translateY(-4px);
-    }
+    .capability-card:hover { border-color: rgba(251,191,36,0.2); background: rgba(255,255,255,0.07); transform: translateY(-4px); }
 
     /* ---- RFQ FORM ---- */
-    .rfq-section {
-      background: #f8f5ef;
-      position: relative;
-    }
+    .rfq-section { background: #f8f5ef; position: relative; }
     .rfq-section::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 4px;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 4px;
       background: linear-gradient(90deg, #047857, #f59e0b, #047857);
     }
 
     .form-field {
-      width: 100%;
-      padding: 13px 16px;
-      background: #fff;
-      border: 1px solid rgba(30,41,59,0.15);
-      color: #1e293b;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.875rem;
-      outline: none;
-      transition: border-color 0.2s, box-shadow 0.2s;
-      -webkit-appearance: none;
-      appearance: none;
+      width: 100%; padding: 13px 16px; background: #fff; border: 1px solid rgba(30,41,59,0.15);
+      color: #1e293b; font-family: 'DM Sans', sans-serif; font-size: 0.875rem; outline: none;
+      transition: border-color 0.2s, box-shadow 0.2s; -webkit-appearance: none; appearance: none;
     }
-    .form-field:focus {
-      border-color: #047857;
-      box-shadow: 0 0 0 3px rgba(4,120,87,0.1);
-    }
+    .form-field:focus { border-color: #047857; box-shadow: 0 0 0 3px rgba(4,120,87,0.1); }
     .form-field::placeholder { color: #94a3b8; }
     .form-label {
-      display: block;
-      font-size: 0.75rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      color: #475569;
-      margin-bottom: 6px;
+      display: block; font-size: 0.75rem; font-weight: 600; letter-spacing: 0.1em;
+      text-transform: uppercase; color: #475569; margin-bottom: 6px;
     }
 
     /* ---- SCROLL ANIMATIONS ---- */
-    .reveal {
-      opacity: 0;
-      transform: translateY(24px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal.visible {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    .reveal-left {
-      opacity: 0;
-      transform: translateX(-24px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal-left.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
-    .reveal-right {
-      opacity: 0;
-      transform: translateX(24px);
-      transition: opacity 0.7s ease, transform 0.7s ease;
-    }
-    .reveal-right.visible {
-      opacity: 1;
-      transform: translateX(0);
-    }
+    .reveal { opacity: 0; transform: translateY(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal.visible { opacity: 1; transform: translateY(0); }
+    .reveal-left { opacity: 0; transform: translateX(-24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-left.visible { opacity: 1; transform: translateX(0); }
+    .reveal-right { opacity: 0; transform: translateX(24px); transition: opacity 0.7s ease, transform 0.7s ease; }
+    .reveal-right.visible { opacity: 1; transform: translateX(0); }
     .reveal-delay-1 { transition-delay: 0.1s; }
     .reveal-delay-2 { transition-delay: 0.2s; }
     .reveal-delay-3 { transition-delay: 0.3s; }
@@ -479,50 +291,27 @@
     .reveal-delay-5 { transition-delay: 0.5s; }
 
     /* ---- DIVIDER LINE ---- */
-    .divider-gold {
-      height: 1px;
-      background: linear-gradient(90deg, transparent, rgba(245,158,11,0.4), transparent);
-    }
+    .divider-gold { height: 1px; background: linear-gradient(90deg, transparent, rgba(245,158,11,0.4), transparent); }
 
     /* ---- ESTATE SECTION ---- */
-    .estate-bg {
-      background: linear-gradient(135deg, #f8f5ef 0%, #f2ead9 100%);
-    }
+    .estate-bg { background: linear-gradient(135deg, #f8f5ef 0%, #f2ead9 100%); }
 
     /* ---- MOBILE MENU ---- */
     #mobile-menu {
-      display: none;
-      position: fixed;
-      inset: 0;
-      background: rgba(5,46,22,0.97);
-      z-index: 100;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 36px;
+      display: none; position: fixed; inset: 0; background: rgba(5,46,22,0.97); z-index: 100;
+      flex-direction: column; align-items: center; justify-content: center; gap: 36px;
     }
     #mobile-menu.open { display: flex; }
     .mobile-nav-link {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 2.2rem;
-      font-weight: 300;
-      color: #f8f5ef;
-      text-decoration: none;
-      letter-spacing: 0.04em;
-      transition: color 0.2s;
+      font-family: 'Cormorant Garamond', Georgia, serif; font-size: 2.2rem; font-weight: 300;
+      color: #f8f5ef; text-decoration: none; letter-spacing: 0.04em; transition: color 0.2s;
     }
     .mobile-nav-link:hover { color: #f59e0b; }
 
     /* ---- FOOTER ---- */
-    .footer-bg {
-      background: #0f172a;
-      position: relative;
-    }
+    .footer-bg { background: #0f172a; position: relative; }
     .footer-bg::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0; right: 0;
-      height: 1px;
+      content: ''; position: absolute; top: 0; left: 0; right: 0; height: 1px;
       background: linear-gradient(90deg, transparent, rgba(245,158,11,0.3), transparent);
     }
 
@@ -530,127 +319,151 @@
     .text-gold { color: #f59e0b; }
     .text-emerald { color: #047857; }
     .bg-emerald-main { background-color: #064e3b; }
-    .cardamom-capsule {
-      display: inline-block;
-      width: 10px; height: 10px;
-      background: #047857;
-      border-radius: 50%;
-      margin-right: 6px;
-    }
-
-    /* Quote bar */
     .quote-bar {
-      background: #064e3b;
-      border-left: 3px solid #f59e0b;
-      padding: 20px 24px;
+      background: #064e3b; border-left: 3px solid #f59e0b; padding: 20px 24px;
     }
-
-    /* Tag chip */
     .tag-chip {
-      display: inline-block;
-      padding: 4px 12px;
-      font-size: 0.6875rem;
-      font-weight: 600;
-      letter-spacing: 0.1em;
-      text-transform: uppercase;
-      background: rgba(4,120,87,0.1);
-      color: #047857;
-      border: 1px solid rgba(4,120,87,0.2);
+      display: inline-block; padding: 4px 12px; font-size: 0.6875rem; font-weight: 600;
+      letter-spacing: 0.1em; text-transform: uppercase; background: rgba(4,120,87,0.1);
+      color: #047857; border: 1px solid rgba(4,120,87,0.2);
     }
-
-    /* Success toast */
     #form-success {
-      display: none;
-      background: #064e3b;
-      border: 1px solid rgba(16,185,129,0.3);
-      color: #f8f5ef;
-      padding: 16px 24px;
-      font-size: 0.875rem;
+      display: none; background: #064e3b; border: 1px solid rgba(16,185,129,0.3);
+      color: #f8f5ef; padding: 16px 24px; font-size: 0.875rem;
     }
-
-    /* Select arrow fix */
     select.form-field {
       background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8' viewBox='0 0 12 8'%3E%3Cpath d='M1 1l5 5 5-5' stroke='%23475569' stroke-width='1.5' fill='none' stroke-linecap='round'/%3E%3C/svg%3E");
-      background-repeat: no-repeat;
-      background-position: right 14px center;
-      padding-right: 40px;
-      cursor: pointer;
+      background-repeat: no-repeat; background-position: right 14px center; padding-right: 40px; cursor: pointer;
     }
-
-    @media (max-width: 768px) {
-      .hero-title-line span { font-size: clamp(2.4rem, 9vw, 4rem); }
-    }
-
-    /* Animated border on RFQ form card */
-    .rfq-card {
-      position: relative;
-      background: #fff;
-      border: 1px solid rgba(6,78,59,0.12);
-    }
+    @media (max-width: 768px) { .hero-title-line span { font-size: clamp(2.4rem, 9vw, 4rem); } }
+    .rfq-card { position: relative; background: #fff; border: 1px solid rgba(6,78,59,0.12); }
     .rfq-card::before {
-      content: '';
-      position: absolute;
-      top: 0; left: 0;
-      width: 100%; height: 3px;
+      content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 3px;
       background: linear-gradient(90deg, #047857, #f59e0b);
     }
+    .timeline-dot { width: 10px; height: 10px; border-radius: 50%; background: #f59e0b; flex-shrink: 0; margin-top: 5px; }
+    .timeline-line { width: 1px; background: rgba(245,158,11,0.25); flex: 1; min-height: 32px; }
 
-    /* ---- Process timeline ---- */
-    .timeline-dot {
-      width: 10px; height: 10px;
-      border-radius: 50%;
-      background: #f59e0b;
+    /* Logo text */
+    .logo-corp { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 1.2rem; letter-spacing: 0.02em; color: #052e16; line-height: 1.1; }
+    .logo-corp span { display: block; font-family: 'DM Sans', sans-serif; font-size: 0.55rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: #047857; margin-top: 1px; }
+    .logo-corp-light { font-family: 'Cormorant Garamond', Georgia, serif; font-weight: 600; font-size: 1.2rem; letter-spacing: 0.02em; color: #f8f5ef; line-height: 1.1; }
+    .logo-corp-light span { display: block; font-family: 'DM Sans', sans-serif; font-size: 0.55rem; font-weight: 600; letter-spacing: 0.22em; text-transform: uppercase; color: rgba(245,158,11,0.85); margin-top: 1px; }
+
+    /* ============================================================
+       BRAND TABS — New multi-brand modular system
+       To add a 3rd brand: duplicate a .brand-tab-btn and its
+       corresponding .brand-panel block and update data-tab / id.
+       ============================================================ */
+
+    .brand-tabs-nav {
+      display: flex;
+      align-items: flex-end;
+      gap: 0;
+      border-bottom: 1px solid rgba(6,78,59,0.15);
+      margin-bottom: 52px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .brand-tabs-nav::-webkit-scrollbar { display: none; }
+
+    .brand-tab-btn {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 4px;
+      padding: 14px 36px 18px;
+      background: transparent;
+      border: none;
+      border-bottom: 2px solid transparent;
+      margin-bottom: -1px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      white-space: nowrap;
+      text-align: left;
+    }
+    .brand-tab-commodity {
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.58rem;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      color: #94a3b8;
+      transition: color 0.25s;
+    }
+    .brand-tab-name {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 1.4rem;
+      font-weight: 600;
+      color: #94a3b8;
+      transition: color 0.25s;
+      line-height: 1.1;
+    }
+    .brand-tab-btn.active .brand-tab-commodity,
+    .brand-tab-btn:hover .brand-tab-commodity { color: #047857; }
+    .brand-tab-btn.active .brand-tab-name,
+    .brand-tab-btn:hover .brand-tab-name { color: #0f172a; }
+    .brand-tab-btn.active { border-bottom-color: #047857; }
+
+    .brand-tab-divider {
+      width: 1px; height: 36px;
+      background: rgba(6,78,59,0.12);
+      margin: 0 4px;
+      align-self: center;
       flex-shrink: 0;
-      margin-top: 5px;
-    }
-    .timeline-line {
-      width: 1px;
-      background: rgba(245,158,11,0.25);
-      flex: 1;
-      min-height: 32px;
     }
 
-    /* Logo text styling */
-    .logo-corp {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-weight: 600;
-      font-size: 1.2rem;
-      letter-spacing: 0.02em;
-      color: #052e16;
-      line-height: 1.1;
-    }
-    .logo-corp span {
-      display: block;
+    /* "Add new brand" placeholder tab — purely decorative signal for scalability */
+    .brand-tab-add {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 18px 24px;
+      border: none;
+      background: transparent;
+      color: rgba(30,41,59,0.2);
       font-family: 'DM Sans', sans-serif;
-      font-size: 0.55rem;
-      font-weight: 600;
-      letter-spacing: 0.22em;
+      font-size: 0.65rem;
+      letter-spacing: 0.12em;
       text-transform: uppercase;
-      color: #047857;
-      margin-top: 1px;
+      cursor: default;
+      white-space: nowrap;
+      margin-bottom: 0;
     }
-    .logo-corp-light {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-weight: 600;
-      font-size: 1.2rem;
-      letter-spacing: 0.02em;
-      color: #f8f5ef;
-      line-height: 1.1;
+
+    .brand-panel { display: none; }
+    .brand-panel.active { display: block; }
+
+    /* Brand identity header inside each panel */
+    .brand-identity-header {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 48px;
+      align-items: start;
+      margin-bottom: 48px;
+      padding-bottom: 48px;
+      border-bottom: 1px solid rgba(6,78,59,0.08);
     }
-    .logo-corp-light span {
-      display: block;
-      font-family: 'DM Sans', sans-serif;
-      font-size: 0.55rem;
-      font-weight: 600;
-      letter-spacing: 0.22em;
-      text-transform: uppercase;
-      color: rgba(245,158,11,0.85);
-      margin-top: 1px;
+    @media (max-width: 768px) {
+      .brand-identity-header { grid-template-columns: 1fr; gap: 24px; }
+    }
+
+    /* Pepper (Bite & Bloom) card dark variants — within the existing slate palette */
+    .pepper-card-flagship  { background: linear-gradient(135deg, #0f172a 0%, #1e293b 50%, #0f172a 100%); }
+    .pepper-card-standard  { background: linear-gradient(135deg, #1e293b 0%, #334155 80%, #1e293b 100%); }
+    .pepper-card-reserve   { background: linear-gradient(135deg, #1a0800 0%, #431407 50%, #7c2d12 100%); }
+
+    @keyframes scrollPulse {
+      0%,100% { opacity:0.3; transform:scaleY(1); }
+      50% { opacity:1; transform:scaleY(1.3); }
     }
   </style>
 </head>
 <body>
 
+  <!-- ================================================
+       NAVIGATION
+       ================================================ -->
   <nav id="navbar" class="fixed top-0 left-0 right-0 z-50 transition-all duration-300" style="background: transparent;">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="flex items-center justify-between h-18 py-4">
@@ -668,9 +481,9 @@
         </a>
 
         <div class="hidden md:flex items-center gap-8">
-          <a href="#estate" class="nav-link">Our Estate</a>
-          <a href="#whiff-whistle" class="nav-link">Whiff &amp; Whistle</a>
-          <a href="#bulk" class="nav-link">Bulk Sourcing</a>
+          <a href="#estate"  class="nav-link">Our Estate</a>
+          <a href="#brands"  class="nav-link">Our Brands</a>
+          <a href="#bulk"    class="nav-link">Bulk Sourcing</a>
           <a href="#contact" class="nav-link">Contact</a>
           <a href="#rfq" class="btn-primary" style="padding:10px 20px;font-size:0.75rem;">Request Quote</a>
         </div>
@@ -689,13 +502,16 @@
       <i data-lucide="x" style="width:28px;height:28px;"></i>
     </button>
     <div class="logo-corp-light mb-8 text-center">AJ AgriCorp Ventures<span style="text-align:center;">Western Ghats Estate</span></div>
-    <a href="#estate"        class="mobile-nav-link" onclick="closeMobileMenu()">Our Estate</a>
-    <a href="#whiff-whistle" class="mobile-nav-link" onclick="closeMobileMenu()">Whiff &amp; Whistle</a>
-    <a href="#bulk"          class="mobile-nav-link" onclick="closeMobileMenu()">Bulk Sourcing</a>
-    <a href="#rfq"           class="mobile-nav-link" onclick="closeMobileMenu()">Request Quote</a>
-    <a href="#contact"       class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
+    <a href="#estate"  class="mobile-nav-link" onclick="closeMobileMenu()">Our Estate</a>
+    <a href="#brands"  class="mobile-nav-link" onclick="closeMobileMenu()">Our Brands</a>
+    <a href="#bulk"    class="mobile-nav-link" onclick="closeMobileMenu()">Bulk Sourcing</a>
+    <a href="#rfq"     class="mobile-nav-link" onclick="closeMobileMenu()">Request Quote</a>
+    <a href="#contact" class="mobile-nav-link" onclick="closeMobileMenu()">Contact</a>
   </div>
 
+  <!-- ================================================
+       HERO
+       ================================================ -->
   <section class="hero-bg min-h-screen flex flex-col justify-center relative pt-20 pb-16" id="home">
     <div class="hero-pattern"></div>
     <div class="hero-pattern-2"></div>
@@ -710,7 +526,7 @@
         <div class="lg:col-span-7">
           <div class="flex items-center gap-3 mb-8">
             <div style="width:1px;height:32px;background:rgba(245,158,11,0.5);"></div>
-            <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,158,11,0.85);">Single-Origin · Premium Grade · Direct Estate</span>
+            <span style="font-size:0.7rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,158,11,0.85);">Multi-Commodity · Single Origin · Direct Estate</span>
           </div>
 
           <h1 style="font-family:'Cormorant Garamond',Georgia,serif;line-height:1.0;">
@@ -720,13 +536,13 @@
           </h1>
 
           <p class="hero-sub mt-8 max-w-xl" style="font-size:1.0625rem;line-height:1.75;color:rgba(248,245,239,0.72);font-weight:300;">
-            From our pristine estate to global supply chains, AJ AgriCorp Ventures delivers premium, single-origin cardamom — traceable, consistent, and cultivated with precision.
+            From our Western Ghats estates to global supply chains, AJ AgriCorp Ventures delivers a portfolio of premium single-origin spices — traceable, consistent, and cultivated with the precision of a true agricultural enterprise.
           </p>
 
           <div class="hero-ctas flex flex-wrap gap-4 mt-10">
-            <a href="#whiff-whistle" class="btn-primary">
-              <i data-lucide="shopping-bag" style="width:15px;height:15px;"></i>
-              Explore Whiff &amp; Whistle
+            <a href="#brands" class="btn-primary">
+              <i data-lucide="layers" style="width:15px;height:15px;"></i>
+              Explore Our Brands
             </a>
             <a href="#rfq" class="btn-outline">
               <i data-lucide="file-text" style="width:15px;height:15px;"></i>
@@ -737,36 +553,42 @@
 
         <div class="lg:col-span-5 flex justify-end">
           <div style="border:1px solid rgba(255,255,255,0.08);background:rgba(255,255,255,0.04);backdrop-filter:blur(8px);padding:36px;max-width:340px;width:100%;">
-            <div style="font-size:0.65rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-bottom:28px;">Estate At A Glance</div>
+            <div style="font-size:0.65rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-bottom:28px;">Enterprise At A Glance</div>
             <div class="flex flex-col gap-6">
+
               <div class="hero-stat flex items-end gap-4">
                 <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:3.5rem;font-weight:600;color:#f8f5ef;line-height:1;">GI</div>
                 <div style="padding-bottom:8px;">
                   <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Protected</div>
-                  <div style="font-size:0.8rem;color:rgba(248,245,239,0.5);margin-top:2px;">Kerala Origin</div>
+                  <div style="font-size:0.8rem;color:rgba(248,245,239,0.5);margin-top:2px;">Kerala Origin Certified</div>
                 </div>
               </div>
+
               <div style="height:1px;background:rgba(255,255,255,0.06);"></div>
+
               <div class="hero-stat flex items-end gap-4">
                 <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:3.5rem;font-weight:600;color:#f8f5ef;line-height:1;">2</div>
                 <div style="padding-bottom:8px;">
-                  <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Channels</div>
-                  <div style="font-size:0.8rem;color:rgba(248,245,239,0.5);margin-top:2px;">Retail + B2B Wholesale</div>
+                  <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Premium Brands</div>
+                  <div style="font-size:0.8rem;color:rgba(248,245,239,0.5);margin-top:2px;">Whiff & Whistle · Bite & Bloom</div>
                 </div>
               </div>
+
               <div style="height:1px;background:rgba(255,255,255,0.06);"></div>
+
               <div class="hero-stat flex items-end gap-4">
-                <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:3.5rem;font-weight:600;color:#f8f5ef;line-height:1;">8mm</div>
+                <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:3.5rem;font-weight:600;color:#f8f5ef;line-height:1;">2+</div>
                 <div style="padding-bottom:8px;">
-                  <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Premium</div>
-                  <div style="font-size:0.8rem;color:rgba(248,245,239,0.5);margin-top:2px;">Top-Grade Capsules</div>
+                  <div style="font-size:0.75rem;font-weight:600;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Commodities</div>
+                  <div style="font-size:0.8rem;color:rgba(248,245,239,0.5);margin-top:2px;">Cardamom · Black Pepper</div>
                 </div>
               </div>
+
             </div>
 
             <div class="flex items-center gap-2 mt-8 pt-6" style="border-top:1px solid rgba(255,255,255,0.06);">
               <i data-lucide="map-pin" style="width:14px;height:14px;color:#f59e0b;flex-shrink:0;"></i>
-              <span style="font-size:0.75rem;color:rgba(248,245,239,0.55);letter-spacing:0.06em;">Idukki District, Kerala · Western Ghats</span>
+              <span style="font-size:0.75rem;color:rgba(248,245,239,0.55);letter-spacing:0.06em;">Idukki &amp; Wayanad, Kerala · Western Ghats</span>
             </div>
           </div>
         </div>
@@ -779,13 +601,9 @@
     </div>
   </section>
 
-  <style>
-    @keyframes scrollPulse {
-      0%,100% { opacity:0.3; transform:scaleY(1); }
-      50% { opacity:1; transform:scaleY(1.3); }
-    }
-  </style>
-
+  <!-- ================================================
+       ESTATE SECTION
+       ================================================ -->
   <section id="estate" class="estate-bg py-24 lg:py-32">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
       <div class="grid lg:grid-cols-2 gap-16 items-center">
@@ -797,18 +615,16 @@
             <em style="color:#047857;font-style:italic;font-weight:300;">Heart of Spice Country</em>
           </h2>
           <p class="mt-6 font-body" style="font-size:1rem;line-height:1.85;color:#475569;">
-            Nestled in the mist-kissed elevations of the Idukki district, our estate sits at the epicenter of India's premier cardamom growing belt. The combination of shade canopy, rich laterite soil, and year-round highland humidity creates the ideal microclimate for producing cardamom with an unparalleled aromatic intensity.
+            Nestled in the mist-kissed elevations of the Idukki district and the vine-laced highlands of Wayanad, our estates sit at the epicenter of India's premier spice-growing belt — renowned for both the world's finest cardamom and Malabar's legendary black pepper. The combination of shade canopy, rich laterite soil, and year-round highland humidity creates an ideal microclimate for producing spices with unparalleled aromatic intensity.
           </p>
           <p class="mt-4 font-body" style="font-size:1rem;line-height:1.85;color:#475569;">
-            Every capsule is hand-harvested at peak maturity, sun-cured using heritage techniques, and graded through a rigorous quality matrix — ensuring that what reaches you, whether retail or bulk, carries the full integrity of single-origin provenance.
+            Every capsule and berry is hand-harvested at peak maturity, sun-cured using heritage techniques, and graded through a rigorous multi-point quality matrix — ensuring that what reaches you, whether retail or bulk, carries the full integrity of single-origin provenance.
           </p>
 
           <div class="grid grid-cols-2 gap-4 mt-8">
             <div class="feature-card reveal-delay-1">
               <div class="flex items-start gap-3 p-4" style="background:#fff;border:1px solid rgba(6,78,59,0.08);">
-                <div class="feature-icon-wrap">
-                  <i data-lucide="mountain" style="width:20px;height:20px;color:#047857;"></i>
-                </div>
+                <div class="feature-icon-wrap"><i data-lucide="mountain" style="width:20px;height:20px;color:#047857;"></i></div>
                 <div>
                   <div class="font-body" style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0f172a;">Altitude</div>
                   <div class="font-body" style="font-size:0.8rem;color:#64748b;margin-top:2px;">1100–1200m elevation</div>
@@ -817,9 +633,7 @@
             </div>
             <div class="feature-card reveal-delay-2">
               <div class="flex items-start gap-3 p-4" style="background:#fff;border:1px solid rgba(6,78,59,0.08);">
-                <div class="feature-icon-wrap">
-                  <i data-lucide="droplets" style="width:20px;height:20px;color:#047857;"></i>
-                </div>
+                <div class="feature-icon-wrap"><i data-lucide="droplets" style="width:20px;height:20px;color:#047857;"></i></div>
                 <div>
                   <div class="font-body" style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0f172a;">Rainfall</div>
                   <div class="font-body" style="font-size:0.8rem;color:#64748b;margin-top:2px;">Natural + fed irrigation</div>
@@ -828,9 +642,7 @@
             </div>
             <div class="feature-card reveal-delay-3">
               <div class="flex items-start gap-3 p-4" style="background:#fff;border:1px solid rgba(6,78,59,0.08);">
-                <div class="feature-icon-wrap">
-                  <i data-lucide="leaf" style="width:20px;height:20px;color:#047857;"></i>
-                </div>
+                <div class="feature-icon-wrap"><i data-lucide="leaf" style="width:20px;height:20px;color:#047857;"></i></div>
                 <div>
                   <div class="font-body" style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0f172a;">Cultivation</div>
                   <div class="font-body" style="font-size:0.8rem;color:#64748b;margin-top:2px;">Residue-free practices</div>
@@ -839,9 +651,7 @@
             </div>
             <div class="feature-card reveal-delay-4">
               <div class="flex items-start gap-3 p-4" style="background:#fff;border:1px solid rgba(6,78,59,0.08);">
-                <div class="feature-icon-wrap">
-                  <i data-lucide="shield-check" style="width:20px;height:20px;color:#047857;"></i>
-                </div>
+                <div class="feature-icon-wrap"><i data-lucide="shield-check" style="width:20px;height:20px;color:#047857;"></i></div>
                 <div>
                   <div class="font-body" style="font-size:0.75rem;font-weight:600;letter-spacing:0.08em;text-transform:uppercase;color:#0f172a;">Traceability</div>
                   <div class="font-body" style="font-size:0.8rem;color:#64748b;margin-top:2px;">Lot-level QC records</div>
@@ -865,201 +675,381 @@
                 <circle cx="200" cy="250" r="8" fill="rgba(245,158,11,0.4)"/>
                 <circle cx="200" cy="320" r="8" fill="rgba(245,158,11,0.4)"/>
               </svg>
-
               <div style="position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;text-align:center;padding:40px;">
                 <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:4rem;font-weight:600;color:#f8f5ef;line-height:1;">50</div>
                 <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:600;letter-spacing:0.22em;text-transform:uppercase;color:rgba(245,158,11,0.8);margin-top:6px;">Years of Heritage</div>
                 <div style="width:40px;height:1px;background:rgba(248,245,239,0.2);margin:20px auto;"></div>
                 <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.3rem;font-weight:300;font-style:italic;color:rgba(248,245,239,0.75);">Western Ghats, India</div>
-                <div style="margin-top:24px;font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(248,245,239,0.45);line-height:1.8;letter-spacing:0.02em;">Idukki · Kerala<br/>8°N, 77°E</div>
+                <div style="margin-top:24px;font-family:'DM Sans',sans-serif;font-size:0.75rem;color:rgba(248,245,239,0.45);line-height:1.8;letter-spacing:0.02em;">Idukki · Wayanad · Kerala<br/>8°N, 77°E</div>
               </div>
             </div>
-
             <div style="position:absolute;bottom:-20px;left:-20px;background:#f59e0b;padding:20px 24px;">
               <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:1.6rem;font-weight:700;color:#052e16;line-height:1;">100%</div>
               <div style="font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#052e16;margin-top:2px;">Single Origin</div>
             </div>
-
             <div style="position:absolute;top:20px;right:-16px;background:#fff;border:1px solid rgba(6,78,59,0.12);padding:14px 18px;box-shadow:0 8px 24px rgba(0,0,0,0.08);">
               <i data-lucide="award" style="width:20px;height:20px;color:#047857;display:block;margin:0 auto 6px;"></i>
               <div style="font-family:'DM Sans',sans-serif;font-size:0.6rem;font-weight:700;letter-spacing:0.14em;text-transform:uppercase;color:#047857;text-align:center;">FSSAI<br/>Compliant</div>
             </div>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
   <div class="divider-gold" style="margin:0;"></div>
 
-  <section id="whiff-whistle" class="py-24 lg:py-36" style="background:#fff;">
+  <!-- ================================================
+       BRANDS SECTION — Modular multi-brand tab system.
+       To add a 3rd brand:
+         1. Add a new .brand-tab-btn with data-tab="your-brand-id"
+         2. Add a new .brand-panel with id="panel-your-brand-id"
+         3. Populate with your brand's identity header + product cards
+       ================================================ -->
+  <section id="brands" style="background:#fff;" class="py-24 lg:py-36">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
-      <div class="max-w-3xl mx-auto text-center mb-16 reveal">
-        <div class="section-label justify-center mb-5">Retail Brand</div>
+      <!-- Section header -->
+      <div class="max-w-2xl mb-12 reveal">
+        <div class="section-label mb-5">Retail Portfolio</div>
         <h2 class="font-display" style="font-size:clamp(2.4rem,4.5vw,3.8rem);font-weight:600;line-height:1.05;color:#0f172a;">
-          Introducing <em style="color:#047857;font-style:italic;">Whiff &amp; Whistle</em>
+          Crafted for<br/><em style="color:#047857;font-style:italic;font-weight:300;">the Connoisseur</em>
         </h2>
-        <div class="mt-6 quote-bar text-left rounded-none" style="margin-top:28px;">
-          <p class="font-display" style="font-size:1.2rem;font-style:italic;color:#f8f5ef;font-weight:300;line-height:1.7;">
-            "Named for the <span style="color:#f59e0b;">Whiff</span> — that impossibly rich green aroma that stops you mid-step — and the <span style="color:#f59e0b;">Whistle</span> — the culinary magic when cardamom transforms a dish from ordinary into unforgettable."
-          </p>
-        </div>
-        <p class="mt-6 font-body" style="font-size:1rem;line-height:1.8;color:#64748b;">
-          Whiff &amp; Whistle is our premium retail arm, bringing estate-direct single-origin cardamom to discerning home chefs, specialty bakers, and spice connoisseurs across India and beyond. Every pack is traceable, aromatic, and graded by size for consistency in every use.
+        <p class="mt-5 font-body" style="font-size:1rem;line-height:1.8;color:#64748b;">
+          Two distinct consumer brands. One uncompromising estate. Each brand carries its own personality, its own provenance story, and a signature flavour identity — all rooted in the same vertically integrated supply chain.
         </p>
       </div>
 
-      <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-12">
+      <!-- ---- BRAND TAB NAVIGATION ---- -->
+      <div class="brand-tabs-nav reveal">
 
-        <div class="product-card reveal reveal-delay-1">
-          <div style="background:linear-gradient(135deg,#052e16,#064e3b);padding:36px 28px;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(245,158,11,0.07);"></div>
-            <div class="grade-badge" style="background:rgba(245,158,11,0.15);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);margin-bottom:16px;">Flagship Grade</div>
-            <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Emperor<br/>Green</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-top:8px;">8.0mm Grade · Bold Aromatic</div>
-            <div style="position:absolute;bottom:20px;right:24px;">
-              <svg width="44" height="64" viewBox="0 0 44 64" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="22" cy="32" rx="16" ry="28" fill="none" stroke="rgba(245,158,11,0.35)" stroke-width="1.5"/>
-                <ellipse cx="22" cy="32" rx="10" ry="18" fill="rgba(245,158,11,0.08)"/>
-                <line x1="22" y1="10" x2="22" y2="54" stroke="rgba(248,245,239,0.15)" stroke-width="1"/>
-                <circle cx="22" cy="32" r="4" fill="rgba(245,158,11,0.3)"/>
-              </svg>
-            </div>
-          </div>
-          <div style="padding:24px;">
-            <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Capsule size ≥ 8.0mm, hand-sorted
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Deep eucalyptol aroma, vivid green
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Ideal for chai masala, biryani &amp; baking
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Available: 50g · 100g · 250g pouches
-              </li>
-            </ul>
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Starting from</div>
-                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 6,000<span style="font-size:1rem;font-weight:400;">/kg</span></div>
-              </div>
-              <div class="tag-chip">Best Seller</div>
-            </div>
-            <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
-              Buy on Amazon
-            </a>
-          </div>
+        <!-- Tab 1: Whiff & Whistle -->
+        <button class="brand-tab-btn active" data-tab="whiff-whistle" aria-selected="true">
+          <span class="brand-tab-commodity">Cardamom · Kerala</span>
+          <span class="brand-tab-name">Whiff &amp; Whistle</span>
+        </button>
+
+        <div class="brand-tab-divider"></div>
+
+        <!-- Tab 2: Bite & Bloom -->
+        <button class="brand-tab-btn" data-tab="bite-bloom" aria-selected="false">
+          <span class="brand-tab-commodity">Black Pepper · Malabar</span>
+          <span class="brand-tab-name">Bite &amp; Bloom</span>
+        </button>
+
+        <div class="brand-tab-divider"></div>
+
+        <!-- Placeholder tab — signals future expandability -->
+        <div class="brand-tab-add">
+          <i data-lucide="plus-circle" style="width:13px;height:13px;"></i>
+          New Brand — Coming Soon
         </div>
 
-        <div class="product-card reveal reveal-delay-2">
-          <div style="background:linear-gradient(135deg,#064e3b,#047857);padding:36px 28px;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,0.04);"></div>
-            <div class="grade-badge" style="background:rgba(255,255,255,0.1);color:rgba(248,245,239,0.8);border:1px solid rgba(255,255,255,0.15);margin-bottom:16px;">Standard Premium</div>
-            <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Premium<br/>Green</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(248,245,239,0.55);margin-top:8px;">7.5mm Grade · Balanced Profile</div>
-            <div style="position:absolute;bottom:20px;right:24px;">
-              <svg width="38" height="56" viewBox="0 0 38 56" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="19" cy="28" rx="14" ry="24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/>
-                <ellipse cx="19" cy="28" rx="8" ry="15" fill="rgba(255,255,255,0.05)"/>
-                <circle cx="19" cy="28" r="3" fill="rgba(255,255,255,0.2)"/>
-              </svg>
-            </div>
-          </div>
-          <div style="padding:24px;">
-            <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Capsule size ≥ 7.5mm, uniform grade
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Balanced aroma, light floral notes
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Versatile for everyday cooking
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Available: 50g · 100g · 500g pouches
-              </li>
-            </ul>
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Starting from</div>
-                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 5,000<span style="font-size:1rem;font-weight:400;">/kg</span></div>
-              </div>
-              <div class="tag-chip">Popular</div>
-            </div>
-            <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
-              Buy on Amazon
-            </a>
-          </div>
-        </div>
-
-        <div class="product-card reveal reveal-delay-3 md:col-span-2 lg:col-span-1">
-          <div style="background:linear-gradient(135deg,#1a0a00,#7c2d12,#b45309);padding:36px 28px;position:relative;overflow:hidden;">
-            <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(245,158,11,0.1);"></div>
-            <div class="grade-badge" style="background:rgba(245,158,11,0.2);color:#fcd34d;border:1px solid rgba(245,158,11,0.4);margin-bottom:16px;">Limited Reserve</div>
-            <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Estate<br/>Reserve</div>
-            <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(252,211,77,0.7);margin-top:8px;">Blended + Whole · Gift Collection</div>
-            <div style="position:absolute;bottom:20px;right:24px;">
-              <svg width="44" height="44" viewBox="0 0 44 44" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 6 L28 16 L40 18 L31 27 L33 39 L22 33 L11 39 L13 27 L4 18 L16 16 Z" fill="none" stroke="rgba(252,211,77,0.3)" stroke-width="1.5"/>
-              </svg>
-            </div>
-          </div>
-          <div style="padding:24px;">
-            <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Curated mix: whole, crushed &amp; powder
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Premium gift-ready kraft packaging
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                Seasonal batch, estate-stamped lot
-              </li>
-              <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;">
-                <i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>
-                100g &amp; 250g collector tins
-              </li>
-            </ul>
-            <div class="flex items-center justify-between mb-4">
-              <div>
-                <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Limited Batch</div>
-                <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 4,500<span style="font-size:1rem;font-weight:400;">/kg</span></div>
-              </div>
-              <div class="tag-chip" style="background:rgba(180,83,9,0.1);color:#b45309;border-color:rgba(180,83,9,0.2);">Gift Set</div>
-            </div>
-            <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
-              <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" xmlns="http://www.w3.org/2000/svg"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
-              View on Amazon
-            </a>
-          </div>
-        </div>
       </div>
+      <!-- ---- END TAB NAVIGATION ---- -->
 
-      <div class="flex items-center justify-center gap-3 reveal" style="margin-top:8px;">
-        <i data-lucide="info" style="width:14px;height:14px;color:#94a3b8;flex-shrink:0;"></i>
-        <p class="font-body" style="font-size:0.78rem;color:#94a3b8;text-align:center;">Whiff &amp; Whistle is a registered consumer brand of AJ AgriCorp Ventures. All products are FSSAI licensed and packed at our estate facility.</p>
-      </div>
+
+      <!-- ============================================================
+           PANEL 1: WHIFF & WHISTLE (Cardamom)
+           ============================================================ -->
+      <div id="panel-whiff-whistle" class="brand-panel active">
+
+        <!-- Brand identity header -->
+        <div class="brand-identity-header reveal">
+          <div>
+            <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#047857;margin-bottom:10px;">Retail Brand No. 01</div>
+            <div class="font-display" style="font-size:clamp(2.6rem,4vw,4rem);font-weight:600;color:#0f172a;line-height:1.0;">Whiff<br/>&amp; Whistle</div>
+            <div class="font-body" style="font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#94a3b8;margin-top:10px;">Single-Origin Green Cardamom · Idukki, Kerala</div>
+            <div class="mt-6 quote-bar">
+              <p class="font-display" style="font-size:1.15rem;font-style:italic;color:#f8f5ef;font-weight:300;line-height:1.7;">
+                "Named for the <span style="color:#f59e0b;">Whiff</span> — that impossibly rich green aroma that stops you mid-step — and the <span style="color:#f59e0b;">Whistle</span> — the culinary magic when cardamom transforms a dish from ordinary into unforgettable."
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="font-body" style="font-size:1rem;line-height:1.85;color:#64748b;">
+              Whiff &amp; Whistle is our premium retail arm, bringing estate-direct single-origin cardamom to discerning home chefs, specialty bakers, and spice connoisseurs across India and beyond. Every pack is traceable, aromatic, and graded by size for consistency in every use.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="tag-chip">8mm Flagship Grade</span>
+              <span class="tag-chip">FSSAI Licensed</span>
+              <span class="tag-chip">Estate Direct</span>
+              <span class="tag-chip">Lot Traceable</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Product cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+
+          <!-- Card 1: Emperor Green -->
+          <div class="product-card reveal reveal-delay-1">
+            <div style="background:linear-gradient(135deg,#052e16,#064e3b);padding:36px 28px;position:relative;overflow:hidden;">
+              <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(245,158,11,0.07);"></div>
+              <div class="grade-badge" style="background:rgba(245,158,11,0.15);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);margin-bottom:16px;">Flagship Grade</div>
+              <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Emperor<br/>Green</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-top:8px;">8.0mm Grade · Bold Aromatic</div>
+              <div style="position:absolute;bottom:20px;right:24px;">
+                <svg width="44" height="64" viewBox="0 0 44 64" fill="none"><ellipse cx="22" cy="32" rx="16" ry="28" fill="none" stroke="rgba(245,158,11,0.35)" stroke-width="1.5"/><ellipse cx="22" cy="32" rx="10" ry="18" fill="rgba(245,158,11,0.08)"/><line x1="22" y1="10" x2="22" y2="54" stroke="rgba(248,245,239,0.15)" stroke-width="1"/><circle cx="22" cy="32" r="4" fill="rgba(245,158,11,0.3)"/></svg>
+              </div>
+            </div>
+            <div style="padding:24px;">
+              <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Capsule size ≥ 8.0mm, hand-sorted</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Deep eucalyptol aroma, vivid green</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Ideal for chai masala, biryani &amp; baking</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Available: 50g · 100g · 250g pouches</li>
+              </ul>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Starting from</div>
+                  <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 6,000<span style="font-size:1rem;font-weight:400;">/kg</span></div>
+                </div>
+                <div class="tag-chip">Best Seller</div>
+              </div>
+              <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
+                Buy on Amazon
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Premium Green -->
+          <div class="product-card reveal reveal-delay-2">
+            <div style="background:linear-gradient(135deg,#064e3b,#047857);padding:36px 28px;position:relative;overflow:hidden;">
+              <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,0.04);"></div>
+              <div class="grade-badge" style="background:rgba(255,255,255,0.1);color:rgba(248,245,239,0.8);border:1px solid rgba(255,255,255,0.15);margin-bottom:16px;">Standard Premium</div>
+              <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Premium<br/>Green</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(248,245,239,0.55);margin-top:8px;">7.5mm Grade · Balanced Profile</div>
+              <div style="position:absolute;bottom:20px;right:24px;">
+                <svg width="38" height="56" viewBox="0 0 38 56" fill="none"><ellipse cx="19" cy="28" rx="14" ry="24" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="1.5"/><ellipse cx="19" cy="28" rx="8" ry="15" fill="rgba(255,255,255,0.05)"/><circle cx="19" cy="28" r="3" fill="rgba(255,255,255,0.2)"/></svg>
+              </div>
+            </div>
+            <div style="padding:24px;">
+              <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Capsule size ≥ 7.5mm, uniform grade</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Balanced aroma, light floral notes</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Versatile for everyday cooking</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Available: 50g · 100g · 500g pouches</li>
+              </ul>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Starting from</div>
+                  <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 5,000<span style="font-size:1rem;font-weight:400;">/kg</span></div>
+                </div>
+                <div class="tag-chip">Popular</div>
+              </div>
+              <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
+                Buy on Amazon
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Estate Reserve (Cardamom) -->
+          <div class="product-card reveal reveal-delay-3 md:col-span-2 lg:col-span-1">
+            <div style="background:linear-gradient(135deg,#1a0a00,#7c2d12,#b45309);padding:36px 28px;position:relative;overflow:hidden;">
+              <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(245,158,11,0.1);"></div>
+              <div class="grade-badge" style="background:rgba(245,158,11,0.2);color:#fcd34d;border:1px solid rgba(245,158,11,0.4);margin-bottom:16px;">Limited Reserve</div>
+              <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Estate<br/>Reserve</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(252,211,77,0.7);margin-top:8px;">Blended + Whole · Gift Collection</div>
+              <div style="position:absolute;bottom:20px;right:24px;">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none"><path d="M22 6 L28 16 L40 18 L31 27 L33 39 L22 33 L11 39 L13 27 L4 18 L16 16 Z" fill="none" stroke="rgba(252,211,77,0.3)" stroke-width="1.5"/></svg>
+              </div>
+            </div>
+            <div style="padding:24px;">
+              <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Curated mix: whole, crushed &amp; powder</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Premium gift-ready kraft packaging</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Seasonal batch, estate-stamped lot</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>100g &amp; 250g collector tins</li>
+              </ul>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Limited Batch</div>
+                  <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 4,500<span style="font-size:1rem;font-weight:400;">/kg</span></div>
+                </div>
+                <div class="tag-chip" style="background:rgba(180,83,9,0.1);color:#b45309;border-color:rgba(180,83,9,0.2);">Gift Set</div>
+              </div>
+              <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
+                View on Amazon
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /product cards grid -->
+
+        <div class="flex items-center justify-center gap-3" style="margin-top:4px;">
+          <i data-lucide="info" style="width:14px;height:14px;color:#94a3b8;flex-shrink:0;"></i>
+          <p class="font-body" style="font-size:0.78rem;color:#94a3b8;text-align:center;">Whiff &amp; Whistle is a registered consumer brand of AJ AgriCorp Ventures. All products are FSSAI licensed and packed at our estate facility.</p>
+        </div>
+
+      </div><!-- /panel whiff-whistle -->
+
+
+      <!-- ============================================================
+           PANEL 2: BITE & BLOOM (Black Pepper)
+           ============================================================ -->
+      <div id="panel-bite-bloom" class="brand-panel">
+
+        <!-- Brand identity header -->
+        <div class="brand-identity-header reveal">
+          <div>
+            <div style="font-size:0.6rem;font-weight:700;letter-spacing:0.22em;text-transform:uppercase;color:#047857;margin-bottom:10px;">Retail Brand No. 02</div>
+            <div class="font-display" style="font-size:clamp(2.6rem,4vw,4rem);font-weight:600;color:#0f172a;line-height:1.0;">Bite<br/>&amp; Bloom</div>
+            <div class="font-body" style="font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:#94a3b8;margin-top:10px;">Single-Origin Black Pepper · Malabar &amp; Wayanad, Kerala</div>
+            <div class="mt-6" style="background:#0f172a;border-left:3px solid #f59e0b;padding:20px 24px;">
+              <p class="font-display" style="font-size:1.15rem;font-style:italic;color:#f8f5ef;font-weight:300;line-height:1.7;">
+                "Named for the <span style="color:#f59e0b;">Bite</span> — that immediate, assertive heat that commands the palate the moment pepper meets dish — and the <span style="color:#f59e0b;">Bloom</span> — the slow, sophisticated unfolding of citrus, pine, and warmth that elevates every recipe from accomplished to unforgettable."
+              </p>
+            </div>
+          </div>
+          <div>
+            <p class="font-body" style="font-size:1rem;line-height:1.85;color:#64748b;">
+              Bite &amp; Bloom is our premium pepper arm, sourcing single-origin black pepper from the ancient vine-draped estates of Malabar and the high ranges of Wayanad. Every berry is sun-dried to precise moisture, hand-graded by size and density, and processed to preserve the volatile oils that carry pepper's true aromatic identity — the hallmark of genuine Tellicherry provenance.
+            </p>
+            <p class="font-body mt-4" style="font-size:1rem;line-height:1.85;color:#64748b;">
+              Bold at First Touch. Complex at Every Turn.
+            </p>
+            <div class="flex flex-wrap gap-2 mt-6">
+              <span class="tag-chip">TGSEB Flagship</span>
+              <span class="tag-chip">FSSAI Licensed</span>
+              <span class="tag-chip">Estate Direct</span>
+              <span class="tag-chip">Lot Traceable</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Bite & Bloom product cards -->
+        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 mb-10">
+
+          <!-- Card 1: Tellicherry Bold (TGSEB) -->
+          <div class="product-card reveal reveal-delay-1">
+            <div class="pepper-card-flagship" style="padding:36px 28px;position:relative;overflow:hidden;">
+              <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(245,158,11,0.06);"></div>
+              <div class="grade-badge" style="background:rgba(245,158,11,0.15);color:#f59e0b;border:1px solid rgba(245,158,11,0.3);margin-bottom:16px;">Flagship Grade · TGSEB</div>
+              <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Tellicherry<br/>Bold</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-top:8px;">6.5mm+ Retained · Extra Bold</div>
+              <div style="position:absolute;bottom:20px;right:24px;">
+                <!-- Pepper berry SVG illustration -->
+                <svg width="48" height="48" viewBox="0 0 48 48" fill="none">
+                  <circle cx="24" cy="24" r="16" fill="none" stroke="rgba(245,158,11,0.3)" stroke-width="1.5"/>
+                  <circle cx="24" cy="24" r="10" fill="rgba(245,158,11,0.07)"/>
+                  <circle cx="24" cy="24" r="5"  fill="rgba(245,158,11,0.2)"/>
+                  <line x1="24" y1="8"  x2="24" y2="16" stroke="rgba(248,245,239,0.2)" stroke-width="1"/>
+                  <path d="M24 8 C28 4 32 5 30 9" fill="none" stroke="rgba(248,245,239,0.15)" stroke-width="0.8"/>
+                </svg>
+              </div>
+            </div>
+            <div style="padding:24px;">
+              <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Retained on 6.5mm screen, uniform bold</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Complex citrus, floral &amp; pine top notes</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Ideal for gourmet mills, dry rubs, fine dining</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Available: 50g · 100g · 250g pouches</li>
+              </ul>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Starting from</div>
+                  <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 1,200<span style="font-size:1rem;font-weight:400;">/kg</span></div>
+                </div>
+                <div class="tag-chip">Connoisseur Pick</div>
+              </div>
+              <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
+                Buy on Amazon
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 2: Malabar Select (MG-1) -->
+          <div class="product-card reveal reveal-delay-2">
+            <div class="pepper-card-standard" style="padding:36px 28px;position:relative;overflow:hidden;">
+              <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(255,255,255,0.03);"></div>
+              <div class="grade-badge" style="background:rgba(255,255,255,0.1);color:rgba(248,245,239,0.8);border:1px solid rgba(255,255,255,0.15);margin-bottom:16px;">Standard Premium · MG-1</div>
+              <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Malabar<br/>Select</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(248,245,239,0.55);margin-top:8px;">Garbled Grade 1 · Consistent Pungency</div>
+              <div style="position:absolute;bottom:20px;right:24px;">
+                <svg width="40" height="40" viewBox="0 0 40 40" fill="none">
+                  <circle cx="20" cy="20" r="14" fill="none" stroke="rgba(255,255,255,0.18)" stroke-width="1.5"/>
+                  <circle cx="20" cy="20" r="8"  fill="rgba(255,255,255,0.05)"/>
+                  <circle cx="20" cy="20" r="3.5" fill="rgba(255,255,255,0.15)"/>
+                </svg>
+              </div>
+            </div>
+            <div style="padding:24px;">
+              <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Malabar Garbled Grade 1, clean-sorted</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Bold pungency, earthy warmth, clean heat</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Ideal for commercial kitchens &amp; everyday use</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Available: 50g · 100g · 500g pouches</li>
+              </ul>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Starting from</div>
+                  <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 900<span style="font-size:1rem;font-weight:400;">/kg</span></div>
+                </div>
+                <div class="tag-chip">Popular</div>
+              </div>
+              <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
+                Buy on Amazon
+              </a>
+            </div>
+          </div>
+
+          <!-- Card 3: Cracked Reserve (Pepper) -->
+          <div class="product-card reveal reveal-delay-3 md:col-span-2 lg:col-span-1">
+            <div class="pepper-card-reserve" style="padding:36px 28px;position:relative;overflow:hidden;">
+              <div style="position:absolute;top:-20px;right:-20px;width:100px;height:100px;border-radius:50%;background:rgba(245,158,11,0.1);"></div>
+              <div class="grade-badge" style="background:rgba(245,158,11,0.2);color:#fcd34d;border:1px solid rgba(245,158,11,0.4);margin-bottom:16px;">Limited Reserve</div>
+              <div style="font-family:'Cormorant Garamond',Georgia,serif;font-size:2.2rem;font-weight:600;color:#f8f5ef;line-height:1.1;">Cracked<br/>Reserve</div>
+              <div style="font-family:'DM Sans',sans-serif;font-size:0.7rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(252,211,77,0.7);margin-top:8px;">Cold-Cracked TGSEB · Finishing Grade</div>
+              <div style="position:absolute;bottom:20px;right:24px;">
+                <svg width="44" height="44" viewBox="0 0 44 44" fill="none">
+                  <path d="M22 6 L28 16 L40 18 L31 27 L33 39 L22 33 L11 39 L13 27 L4 18 L16 16 Z" fill="none" stroke="rgba(252,211,77,0.3)" stroke-width="1.5"/>
+                </svg>
+              </div>
+            </div>
+            <div style="padding:24px;">
+              <ul style="list-style:none;padding:0;margin:0 0 20px;display:flex;flex-direction:column;gap:10px;">
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Cold-cracked from TGSEB stock, coarse grind</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Intensified aroma, immediate sensory impact</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>Designed for tableside finishing &amp; export</li>
+                <li class="flex items-center gap-2 font-body" style="font-size:0.8rem;color:#475569;"><i data-lucide="check-circle-2" style="width:14px;height:14px;color:#047857;flex-shrink:0;"></i>100g &amp; 250g gift-ready collector tins</li>
+              </ul>
+              <div class="flex items-center justify-between mb-4">
+                <div>
+                  <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.12em;text-transform:uppercase;color:#94a3b8;">Limited Batch</div>
+                  <div class="font-display" style="font-size:1.6rem;font-weight:600;color:#0f172a;">₹ 1,500<span style="font-size:1rem;font-weight:400;">/kg</span></div>
+                </div>
+                <div class="tag-chip" style="background:rgba(180,83,9,0.1);color:#b45309;border-color:rgba(180,83,9,0.2);">Gift Set</div>
+              </div>
+              <a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="btn-amazon w-full justify-center">
+                <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor"><path d="M.045 18.02c.072-.116.187-.124.348-.022 3.636 2.11 7.594 3.166 11.87 3.166 2.852 0 5.668-.533 8.447-1.595l.315-.14c.138-.06.234-.1.293-.13.226-.088.39-.046.525.13.12.174.09.336-.12.48-.256.19-.6.41-1.006.654-1.244.743-2.64 1.316-4.185 1.726a18.829 18.829 0 01-4.53.55c-4.68 0-8.783-1.317-12.302-3.952-.162-.12-.23-.238-.162-.398.07-.16.162-.234.293-.234l.213.014zm22.888-6.17c.16 0 .265.085.316.253.05.167.025.322-.072.456a2.5 2.5 0 01-.367.358 12.72 12.72 0 01-3.065 1.758c-.935.382-1.89.57-2.86.57-.858 0-1.68-.162-2.468-.486a6.454 6.454 0 01-1.974-1.298c-.138-.138-.18-.276-.128-.414.052-.138.166-.207.34-.207.11 0 .21.04.3.118.65.562 1.364.99 2.143 1.283.78.293 1.576.44 2.394.44.9 0 1.826-.163 2.777-.49.95-.326 1.774-.77 2.47-1.33.14-.11.264-.167.37-.167l.39.015zm-8.39-12.82c.4 0 .67.132.82.396.15.262.18.57.09.922-.09.35-.25.714-.477 1.092l-3.246 5.56c-.107.182-.163.32-.163.415 0 .268.204.402.61.402h.86c.266 0 .408.12.43.36.02.24-.085.38-.317.42l-5.09.53c-.227.024-.376-.086-.447-.33-.07-.243.018-.44.264-.59l1.68-.974c.15-.087.225-.215.225-.385V5.71c0-.19-.064-.34-.193-.45l-1.18-.96c-.173-.14-.257-.29-.25-.45.007-.16.116-.28.327-.36l4.62-1.63c.128-.046.253-.07.376-.07zm-9.2 1.38c.42 0 .63.18.63.54v10.48c0 .305.12.457.363.457l1.41-.01c.243 0 .385.12.426.36.04.242-.068.39-.327.44l-4.762.57c-.24.03-.39-.077-.45-.32-.063-.244.04-.408.307-.49l.856-.287c.18-.06.27-.18.27-.363V5.46c0-.22-.108-.376-.325-.464L1.1 4.28c-.22-.1-.32-.25-.304-.45.018-.2.15-.35.397-.45l4.15-1.6c.09-.033.175-.05.256-.05z"/></svg>
+                View on Amazon
+              </a>
+            </div>
+          </div>
+
+        </div><!-- /bite-bloom product cards -->
+
+        <div class="flex items-center justify-center gap-3" style="margin-top:4px;">
+          <i data-lucide="info" style="width:14px;height:14px;color:#94a3b8;flex-shrink:0;"></i>
+          <p class="font-body" style="font-size:0.78rem;color:#94a3b8;text-align:center;">Bite &amp; Bloom is a registered consumer brand of AJ AgriCorp Ventures. All products are FSSAI licensed and processed at our estate facility.</p>
+        </div>
+
+      </div><!-- /panel bite-bloom -->
+
     </div>
   </section>
 
+
+  <!-- ================================================
+       B2B / BULK SOURCING
+       ================================================ -->
   <section id="bulk" class="b2b-bg py-24 lg:py-36 relative">
     <div class="max-w-7xl mx-auto px-6 lg:px-8 relative z-10">
 
@@ -1075,7 +1065,7 @@
             <em style="color:#f59e0b;font-weight:300;font-style:italic;">Enterprise Scale</em>
           </h2>
           <p class="font-body mt-6 reveal-left" style="font-size:1rem;line-height:1.85;color:rgba(248,245,239,0.65);">
-            AJ AgriCorp Ventures operates a dedicated bulk sourcing vertical for institutional buyers, FMCG companies, spice exporters, restaurant chains, and contract procurement desks. Our vertically integrated model — from cultivation to cured delivery — eliminates intermediaries and guarantees traceability at every step.
+            AJ AgriCorp Ventures operates a dedicated bulk sourcing vertical for institutional buyers, FMCG companies, spice exporters, restaurant chains, and contract procurement desks. Our multi-commodity model — spanning premium cardamom and Malabar black pepper — is vertically integrated from cultivation to cured delivery, eliminating intermediaries and guaranteeing lot-level traceability at every step.
           </p>
 
           <div class="mt-10 flex flex-col gap-0 reveal-left">
@@ -1086,7 +1076,7 @@
               </div>
               <div style="padding-bottom:24px;">
                 <div class="font-body" style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Step 01 — Inquiry</div>
-                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Submit RFQ with specifications, volume, and delivery timeline.</div>
+                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Submit RFQ with commodity, specifications, volume, and delivery timeline.</div>
               </div>
             </div>
             <div class="flex gap-4">
@@ -1096,7 +1086,7 @@
               </div>
               <div style="padding-bottom:24px;">
                 <div class="font-body" style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Step 02 — Sample Dispatch</div>
-                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Receive 50gm graded samples with COA and lab certification within 5–7 days.</div>
+                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Receive graded samples — cardamom or pepper — with COA and lab certification within 5–7 days.</div>
               </div>
             </div>
             <div class="flex gap-4">
@@ -1106,7 +1096,7 @@
               </div>
               <div style="padding-bottom:24px;">
                 <div class="font-body" style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Step 03 — Contract &amp; Pricing</div>
-                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Flexible pricing: spot rate or long-term supply contract. Forward booking available.</div>
+                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Flexible pricing: spot rate or long-term supply contract across commodities. Forward booking available.</div>
               </div>
             </div>
             <div class="flex gap-4">
@@ -1115,7 +1105,7 @@
               </div>
               <div>
                 <div class="font-body" style="font-size:0.75rem;font-weight:700;letter-spacing:0.1em;text-transform:uppercase;color:#f59e0b;">Step 04 — Secured Dispatch</div>
-                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Tamper-evident packaging, cold-chain logistics, insurance-covered shipment.</div>
+                <div class="font-body" style="font-size:0.85rem;color:rgba(248,245,239,0.55);margin-top:4px;">Tamper-evident packaging, cold-chain logistics, insurance-covered shipment for all commodity types.</div>
               </div>
             </div>
           </div>
@@ -1127,7 +1117,7 @@
               <i data-lucide="package" style="width:20px;height:20px;color:#f59e0b;"></i>
             </div>
             <h3 class="font-body" style="font-size:0.875rem;font-weight:700;color:#f8f5ef;margin-bottom:8px;">Custom Quantities</h3>
-            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">From trial orders to multi-ton contract lots. Minimum bulk order: 50kg. Maximum: limited only by seasonal harvest yield.</p>
+            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">From trial orders to multi-ton contract lots across cardamom and black pepper. MOQ: 50kg. Ceiling limited only by seasonal harvest yield.</p>
           </div>
 
           <div class="capability-card p-6 reveal reveal-delay-2">
@@ -1135,7 +1125,7 @@
               <i data-lucide="settings-2" style="width:20px;height:20px;color:#f59e0b;"></i>
             </div>
             <h3 class="font-body" style="font-size:0.875rem;font-weight:700;color:#f8f5ef;margin-bottom:8px;">Specialized Curing</h3>
-            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">Solar-cured, shade-dried, or kiln-processed based on buyer specifications. Custom moisture content (8–12%) on request.</p>
+            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">Solar-cured, shade-dried, or kiln-processed to commodity spec. Custom moisture: cardamom (8–12%), black pepper (10–14%) on request.</p>
           </div>
 
           <div class="capability-card p-6 reveal reveal-delay-3">
@@ -1151,7 +1141,7 @@
               <i data-lucide="sprout" style="width:20px;height:20px;color:#f59e0b;"></i>
             </div>
             <h3 class="font-body" style="font-size:0.875rem;font-weight:700;color:#f8f5ef;margin-bottom:8px;">Contract Farming</h3>
-            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">Multi-season forward contracts for volume buyers. Guaranteed pricing bands with estate-backed supply assurance for 1–3 year terms.</p>
+            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">Multi-season forward contracts for volume buyers on cardamom and pepper. Guaranteed pricing bands with estate-backed supply assurance for 1–3 year terms.</p>
           </div>
 
           <div class="capability-card p-6 reveal reveal-delay-5">
@@ -1159,21 +1149,21 @@
               <i data-lucide="flask-conical" style="width:20px;height:20px;color:#f59e0b;"></i>
             </div>
             <h3 class="font-body" style="font-size:0.875rem;font-weight:700;color:#f8f5ef;margin-bottom:8px;">Quality Assurance</h3>
-            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">Third-party lab testing for volatile oils, aflatoxin, heavy metals, and moisture. COA provided with every bulk shipment.</p>
+            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">Third-party lab testing for volatile oils, piperine content (pepper), aflatoxin, heavy metals, and moisture. COA provided with every bulk shipment.</p>
           </div>
 
-<div class="capability-card p-6 reveal reveal-delay-6">
-  <div style="width:44px;height:44px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
-    <i data-lucide="tag" style="width:20px;height:20px;color:#f59e0b;"></i>
-  </div>
-  <h3 class="font-body" style="font-size:0.875rem;font-weight:700;color:#f8f5ef;margin-bottom:8px;">White-Label Packaging</h3>
-  <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">End-to-end packaging solutions for domestic retail brands. Custom pouches, branding application, and compliance-ready labeling available.</p>
-</div>
+          <div class="capability-card p-6 reveal reveal-delay-6">
+            <div style="width:44px;height:44px;background:rgba(245,158,11,0.1);border:1px solid rgba(245,158,11,0.2);display:flex;align-items:center;justify-content:center;margin-bottom:16px;">
+              <i data-lucide="tag" style="width:20px;height:20px;color:#f59e0b;"></i>
+            </div>
+            <h3 class="font-body" style="font-size:0.875rem;font-weight:700;color:#f8f5ef;margin-bottom:8px;">White-Label Packaging</h3>
+            <p class="font-body" style="font-size:0.8rem;color:rgba(248,245,239,0.5);line-height:1.7;">End-to-end packaging for domestic retail brands across spice categories. Custom pouches, branding application, and compliance-ready labeling available.</p>
+          </div>
         </div>
       </div>
 
       <div class="mt-20">
-        <div class="font-body text-center reveal" style="font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.6);margin-bottom:24px;">Typical Order Tiers</div>
+        <div class="font-body text-center reveal" style="font-size:0.7rem;font-weight:600;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.6);margin-bottom:24px;">Typical Order Tiers — All Commodities</div>
         <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
           <div class="reveal reveal-delay-1 text-center p-6" style="border:1px solid rgba(255,255,255,0.06);background:rgba(255,255,255,0.03);">
             <div class="font-display" style="font-size:2rem;font-weight:600;color:#f8f5ef;">50 gms</div>
@@ -1196,6 +1186,10 @@
     </div>
   </section>
 
+
+  <!-- ================================================
+       RFQ FORM
+       ================================================ -->
   <section id="rfq" class="rfq-section py-24 lg:py-32" style="background:linear-gradient(160deg,#f8f5ef 0%,#f2ead9 100%);">
     <div class="max-w-6xl mx-auto px-6 lg:px-8">
       <div class="grid lg:grid-cols-5 gap-12 items-start">
@@ -1206,7 +1200,7 @@
             Start a<br/><em style="color:#047857;font-style:italic;">Sourcing Dialogue</em>
           </h2>
           <p class="font-body mt-5" style="font-size:0.95rem;line-height:1.85;color:#64748b;">
-            Fill in your procurement requirements and our sourcing team will respond within one business day with pricing, grade availability, and sample dispatch details.
+            Tell us your commodity, specifications, and volume. Our sourcing team responds within one business day with pricing, grade availability across our spice range, and sample dispatch details.
           </p>
 
           <div class="mt-10 flex flex-col gap-4">
@@ -1230,19 +1224,19 @@
             </div>
           </div>
 
-   <div class="mt-10 pt-8" style="border-top:1px solid rgba(6,78,59,0.1);">
-  <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#94a3b8;margin-bottom:12px;">Registrations &amp; Compliance</div>
-  <div class="flex flex-wrap gap-2">
-    <span class="tag-chip">FSSAI Licensed</span>
-    <span class="tag-chip">Udyam Registered</span>
-    <span class="tag-chip">GST Compliant</span>
-  </div>
-</div>
+          <div class="mt-10 pt-8" style="border-top:1px solid rgba(6,78,59,0.1);">
+            <div class="font-body" style="font-size:0.65rem;font-weight:600;letter-spacing:0.16em;text-transform:uppercase;color:#94a3b8;margin-bottom:12px;">Registrations &amp; Compliance</div>
+            <div class="flex flex-wrap gap-2">
+              <span class="tag-chip">FSSAI Licensed</span>
+              <span class="tag-chip">Udyam Registered</span>
+              <span class="tag-chip">GST Compliant</span>
+            </div>
+          </div>
         </div>
 
         <div class="lg:col-span-3 reveal-right">
           <div class="rfq-card" style="padding:40px;">
-            <div class="font-body" style="font-size:0.7rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#047857;margin-bottom:24px;">Bulk RFQ Form</div>
+            <div class="font-body" style="font-size:0.7rem;font-weight:600;letter-spacing:0.18em;text-transform:uppercase;color:#047857;margin-bottom:24px;">Multi-Commodity Bulk RFQ</div>
 
             <div id="form-success" style="margin-bottom:20px;">
               <div class="flex items-center gap-3">
@@ -1254,74 +1248,92 @@
               </div>
             </div>
 
-<!-- CHANGE 1: Converted <div> to a live <form> pointing to Web3Forms -->
-<form action="https://api.web3forms.com/submit" method="POST" id="rfq-form">
-  
-  <!-- CHANGE 2: Added your secure routing keys (Put your real key in the value below!) -->
-  <input type="hidden" name="access_key" value="9ee63ac4-11d1-4b90-93c2-9d50b6f22bea">
-  <input type="hidden" name="subject" value="New B2B Cardamom RFQ - AJ AgriCorp">
-  <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
+            <form action="https://api.web3forms.com/submit" method="POST" id="rfq-form">
 
-  <div class="grid sm:grid-cols-2 gap-5 mb-5">
-    <div>
-      <label class="form-label" for="rfq-name">Full Name *</label>
-      <!-- CHANGE 3: Added name="name" -->
-      <input id="rfq-name" name="name" type="text" class="form-field" placeholder="Arjun Mehta" required />
-    </div>
-    <div>
-      <label class="form-label" for="rfq-company">Company / Organization</label>
-      <!-- CHANGE 4: Added name="company" -->
-      <input id="rfq-company" name="company" type="text" class="form-field" placeholder="Mehta Spice Exports Pvt. Ltd." />
-    </div>
-  </div>
+              <input type="hidden" name="access_key" value="9ee63ac4-11d1-4b90-93c2-9d50b6f22bea">
+              <input type="hidden" name="subject" value="New Multi-Commodity B2B Spice RFQ - AJ AgriCorp">
+              <input type="checkbox" name="botcheck" class="hidden" style="display: none;">
 
-  <div class="grid sm:grid-cols-2 gap-5 mb-5">
-    <div>
-      <label class="form-label" for="rfq-email">Corporate Email *</label>
-      <!-- CHANGE 5: Added name="email" -->
-      <input id="rfq-email" name="email" type="email" class="form-field" placeholder="arjun@mehtaspices.com" required />
-    </div>
-    <div>
-      <label class="form-label" for="rfq-phone">Phone / WhatsApp *</label>
-      <!-- CHANGE 6: Added name="phone" -->
-      <input id="rfq-phone" name="phone" type="tel" class="form-field" placeholder="+91 98000 00000" required />
-    </div>
-  </div>
+              <!-- Row 1: Name + Company -->
+              <div class="grid sm:grid-cols-2 gap-5 mb-5">
+                <div>
+                  <label class="form-label" for="rfq-name">Full Name *</label>
+                  <input id="rfq-name" name="name" type="text" class="form-field" placeholder="Arjun Mehta" required />
+                </div>
+                <div>
+                  <label class="form-label" for="rfq-company">Company / Organization</label>
+                  <input id="rfq-company" name="company" type="text" class="form-field" placeholder="Mehta Spice Exports Pvt. Ltd." />
+                </div>
+              </div>
 
-  <div class="grid sm:grid-cols-2 gap-5 mb-5">
-    <div>
-      <label class="form-label" for="rfq-volume">Required Volume *</label>
-      <!-- CHANGE 7: Added name="volume" -->
-      <select id="rfq-volume" name="volume" class="form-field" required>
-        <option value="" disabled selected>Select quantity</option>
-        <option value="50kg">50 kg — Trial / Sampling</option>
-        <option value="100kg">100 kg — Small Batch</option>
-        <option value="500kg">500 kg — Commercial Run</option>
-        <option value="1ton">1 MT — Wholesale</option>
-        <option value="5ton">5+ MT — Contract / Export</option>
-      </select>
-    </div>
-    <div>
-      <label class="form-label" for="rfq-grade">Preferred Grade</label>
-      <!-- CHANGE 8: Added name="grade" -->
-      <select id="rfq-grade" name="grade" class="form-field">
-        <option value="" disabled selected>Select grade</option>
-        <option value="8mm">Emperor Green (8mm+)</option>
-        <option value="7.5mm">Premium Green (7.5mm)</option>
-        <option value="7mm">Standard Green (7mm)</option>
-        <option value="mixed">Mixed / As per sample</option>
-        <option value="tbc">To be discussed</option>
-      </select>
-    </div>
-  </div>
+              <!-- Row 2: Email + Phone -->
+              <div class="grid sm:grid-cols-2 gap-5 mb-5">
+                <div>
+                  <label class="form-label" for="rfq-email">Corporate Email *</label>
+                  <input id="rfq-email" name="email" type="email" class="form-field" placeholder="arjun@mehtaspices.com" required />
+                </div>
+                <div>
+                  <label class="form-label" for="rfq-phone">Phone / WhatsApp *</label>
+                  <input id="rfq-phone" name="phone" type="tel" class="form-field" placeholder="+91 98000 00000" required />
+                </div>
+              </div>
 
-  <div class="mb-6">
-    <label class="form-label" for="rfq-message">Custom Specifications / Message</label>
-    <!-- CHANGE 9: Added name="message" -->
-    <textarea id="rfq-message" name="message" class="form-field" rows="4" placeholder="Please share any additional requirements — moisture content, packaging type, delivery location, target price band, certification needs, or any other specifications…" style="resize:vertical;min-height:100px;"></textarea>
-  </div>
+              <!-- Row 3: Commodity + Volume (NEW commodity dropdown) -->
+              <div class="grid sm:grid-cols-2 gap-5 mb-5">
+                <div>
+                  <label class="form-label" for="rfq-commodity">Commodity Type *</label>
+                  <select id="rfq-commodity" name="commodity" class="form-field" required>
+                    <option value="" disabled selected>Select commodity</option>
+                    <option value="cardamom">Green Cardamom (Elettaria)</option>
+                    <option value="black-pepper">Black Pepper — Malabar / Tellicherry</option>
+                    <option value="mixed">Mixed Spice Package (Cardamom + Pepper)</option>
+                    <option value="other">Other — specify in notes</option>
+                  </select>
+                </div>
+                <div>
+                  <label class="form-label" for="rfq-volume">Required Volume *</label>
+                  <select id="rfq-volume" name="volume" class="form-field" required>
+                    <option value="" disabled selected>Select quantity</option>
+                    <option value="50gm">50 gm — Graded Sample / Trial</option>
+                    <option value="100kg">100 kg — Small Batch</option>
+                    <option value="500kg">500 kg — Commercial Run</option>
+                    <option value="1ton">1 MT — Wholesale</option>
+                    <option value="5ton">5+ MT — Contract / Export</option>
+                  </select>
+                </div>
+              </div>
 
-  <!-- Note: Your submission button should be right below this line inside your code -->
+              <!-- Row 4: Preferred Grade (updated for multi-commodity) -->
+              <div class="mb-5">
+                <label class="form-label" for="rfq-grade">Preferred Grade / Specification</label>
+                <select id="rfq-grade" name="grade" class="form-field">
+                  <option value="" disabled selected>Select grade</option>
+                  <optgroup label="── Green Cardamom ──">
+                    <option value="cardamom-8mm">Cardamom — Emperor Green (8mm+ · AGEB)</option>
+                    <option value="cardamom-7.5mm">Cardamom — Premium Green (7.5mm)</option>
+                    <option value="cardamom-7mm">Cardamom — Standard Green (7mm)</option>
+                  </optgroup>
+                  <optgroup label="── Black Pepper ──">
+                    <option value="pepper-tgseb">Pepper — TGSEB (Tellicherry Garbled Extra Bold, 6.5mm+)</option>
+                    <option value="pepper-tgeb">Pepper — TGEB (Tellicherry Garbled Extra Bold)</option>
+                    <option value="pepper-mg1">Pepper — MG-1 (Malabar Garbled Grade 1)</option>
+                    <option value="pepper-mg2">Pepper — MG-2 (Malabar Garbled Grade 2)</option>
+                  </optgroup>
+                  <optgroup label="── Other ──">
+                    <option value="mixed">Mixed / As per sample</option>
+                    <option value="tbc">To be discussed with sourcing team</option>
+                  </optgroup>
+                </select>
+              </div>
+
+              <!-- Row 5: Custom message -->
+              <div class="mb-6">
+                <label class="form-label" for="rfq-message">Custom Specifications / Message</label>
+                <textarea id="rfq-message" name="message" class="form-field" rows="4"
+                  placeholder="Please share any additional requirements — commodity preference (e.g. Cardamom 8mm+/AGEB or Pepper TGSEB/MG-1), moisture content, curing method, packaging type, delivery location, target price band, certification needs (organic, export-grade), or any other specifications…"
+                  style="resize:vertical;min-height:100px;"></textarea>
+              </div>
+
               <div class="flex gap-2 mb-6">
                 <i data-lucide="lock" style="width:13px;height:13px;color:#94a3b8;flex-shrink:0;margin-top:2px;"></i>
                 <p class="font-body" style="font-size:0.72rem;color:#94a3b8;line-height:1.6;">Your information is used solely for procurement communication. We do not share or sell enquiry data to third parties. View our <a href="#" style="color:#047857;text-decoration:underline;">Privacy Policy</a>.</p>
@@ -1331,13 +1343,19 @@
                 <i data-lucide="send" style="width:15px;height:15px;"></i>
                 Submit RFQ to AJ AgriCorp
               </button>
-            </div>
+
+            </form>
           </div>
         </div>
+
       </div>
     </div>
   </section>
 
+
+  <!-- ================================================
+       FOOTER
+       ================================================ -->
   <footer id="contact" class="footer-bg pt-16 pb-8">
     <div class="max-w-7xl mx-auto px-6 lg:px-8">
 
@@ -1346,15 +1364,12 @@
         <div>
           <div class="flex items-center gap-3 mb-5">
             <div style="width:32px;height:32px;background:#064e3b;display:flex;align-items:center;justify-content:center;flex-shrink:0;">
-              <svg width="18" height="18" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <ellipse cx="10" cy="10" rx="3.5" ry="7" fill="none" stroke="#f59e0b" stroke-width="1.2"/>
-                <circle cx="10" cy="10" r="1.5" fill="#f59e0b"/>
-              </svg>
+              <svg width="18" height="18" viewBox="0 0 20 20" fill="none"><ellipse cx="10" cy="10" rx="3.5" ry="7" fill="none" stroke="#f59e0b" stroke-width="1.2"/><circle cx="10" cy="10" r="1.5" fill="#f59e0b"/></svg>
             </div>
             <div class="logo-corp-light" style="font-size:1rem;">AJ AgriCorp Ventures<span>Western Ghats, India</span></div>
           </div>
           <p class="font-body" style="font-size:0.82rem;line-height:1.8;color:rgba(248,245,239,0.45);">
-            A vertically integrated agricultural enterprise specializing in premium single-origin cardamom from our estate in the Western Ghats of Kerala, India.
+            A vertically integrated agricultural enterprise specializing in premium single-origin spices — cardamom and black pepper — sourced from our estates in the Western Ghats of Kerala, India.
           </p>
           <div class="flex gap-3 mt-6">
             <a href="#" aria-label="LinkedIn" style="width:34px;height:34px;border:1px solid rgba(255,255,255,0.1);display:flex;align-items:center;justify-content:center;transition:border-color 0.2s;" onmouseover="this.style.borderColor='rgba(245,158,11,0.4)'" onmouseout="this.style.borderColor='rgba(255,255,255,0.1)'">
@@ -1372,10 +1387,11 @@
         <div>
           <div class="font-body" style="font-size:0.65rem;font-weight:700;letter-spacing:0.2em;text-transform:uppercase;color:rgba(245,158,11,0.7);margin-bottom:16px;">Navigation</div>
           <ul style="list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:10px;">
-            <li><a href="#estate" class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">Our Estate</a></li>
-            <li><a href="#whiff-whistle" class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">Whiff &amp; Whistle Brand</a></li>
-            <li><a href="#bulk" class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">B2B Bulk Sourcing</a></li>
-            <li><a href="#rfq" class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">Request a Quote (RFQ)</a></li>
+            <li><a href="#estate"  class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">Our Estate</a></li>
+            <li><a href="#brands"  class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">Whiff &amp; Whistle — Cardamom</a></li>
+            <li><a href="#brands"  class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'" onclick="switchBrandTab('bite-bloom')">Bite &amp; Bloom — Black Pepper</a></li>
+            <li><a href="#bulk"    class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">B2B Bulk Sourcing</a></li>
+            <li><a href="#rfq"     class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">Request a Quote (RFQ)</a></li>
             <li><a href="https://www.amazon.in" target="_blank" rel="noopener noreferrer" class="font-body" style="font-size:0.82rem;color:rgba(248,245,239,0.5);text-decoration:none;transition:color 0.2s;" onmouseover="this.style.color='#f8f5ef'" onmouseout="this.style.color='rgba(248,245,239,0.5)'">Shop on Amazon</a></li>
           </ul>
         </div>
@@ -1419,7 +1435,7 @@
 
       <div class="flex flex-col md:flex-row items-center justify-between gap-4 pt-8">
         <div class="font-body" style="font-size:0.73rem;color:rgba(248,245,239,0.3);text-align:center;">
-          © 2025 AJ AgriCorp Ventures. All rights reserved. | Whiff &amp; Whistle is a registered consumer brand of AJ AgriCorp Ventures.
+          © 2025 AJ AgriCorp Ventures. All rights reserved. | Whiff &amp; Whistle and Bite &amp; Bloom are registered consumer brands of AJ AgriCorp Ventures.
         </div>
         <div class="flex items-center gap-5">
           <a href="#" class="font-body" style="font-size:0.72rem;color:rgba(248,245,239,0.3);text-decoration:none;" onmouseover="this.style.color='rgba(248,245,239,0.6)'" onmouseout="this.style.color='rgba(248,245,239,0.3)'">Privacy Policy</a>
@@ -1435,57 +1451,41 @@
     </div>
   </footer>
 
+
+  <!-- ================================================
+       JAVASCRIPT
+       ================================================ -->
   <script>
-    // Safe wrapper — runs after DOM is parsed and Lucide is loaded
+
     function initIcons() {
-      if (typeof lucide !== 'undefined') {
-        lucide.createIcons();
-      }
+      if (typeof lucide !== 'undefined') lucide.createIcons();
     }
 
     document.addEventListener('DOMContentLoaded', function () {
 
-      // ---- Initialize Lucide icons ----
       initIcons();
 
-      // ---- Navbar scroll effect ----
-      const navbar  = document.getElementById('navbar');
-
+      /* ---- Navbar scroll effect ---- */
+      const navbar = document.getElementById('navbar');
       window.addEventListener('scroll', () => {
-        if (window.scrollY > 60) {
-          navbar.classList.add('scrolled');
-        } else {
-          navbar.classList.remove('scrolled');
-        }
+        navbar.classList.toggle('scrolled', window.scrollY > 60);
       });
 
-      // ---- Mobile menu ----
+      /* ---- Mobile menu ---- */
       const mobileMenu = document.getElementById('mobile-menu');
       const menuToggle = document.getElementById('menu-toggle');
       const menuClose  = document.getElementById('menu-close');
 
-      function openMobileMenu() {
-        mobileMenu.classList.add('open');
-        document.body.style.overflow = 'hidden';
-      }
-      function closeMobileMenu() {
-        mobileMenu.classList.remove('open');
-        document.body.style.overflow = '';
-      }
-
-      // Expose closeMobileMenu globally (called from inline onclick attributes)
+      function openMobileMenu()  { mobileMenu.classList.add('open'); document.body.style.overflow = 'hidden'; }
+      function closeMobileMenu() { mobileMenu.classList.remove('open'); document.body.style.overflow = ''; }
       window.closeMobileMenu = closeMobileMenu;
 
       if (menuToggle) menuToggle.addEventListener('click', openMobileMenu);
       if (menuClose)  menuClose.addEventListener('click', closeMobileMenu);
+      document.addEventListener('keydown', e => { if (e.key === 'Escape') closeMobileMenu(); });
 
-      document.addEventListener('keydown', (e) => {
-        if (e.key === 'Escape') closeMobileMenu();
-      });
-
-      // ---- Scroll reveal ----
+      /* ---- Scroll reveal ---- */
       const revealEls = document.querySelectorAll('.reveal, .reveal-left, .reveal-right');
-
       const observer = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
@@ -1494,51 +1494,83 @@
           }
         });
       }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
-
       revealEls.forEach(el => observer.observe(el));
 
-      // ---- Smooth active nav highlighting on scroll ----
+      /* ---- Active nav highlight ---- */
       const sections = document.querySelectorAll('section[id], footer[id]');
       const navLinks  = document.querySelectorAll('.nav-link');
-
       const sectionObserver = new IntersectionObserver((entries) => {
         entries.forEach(entry => {
           if (entry.isIntersecting) {
             navLinks.forEach(link => {
               link.style.color = '';
-              if (link.getAttribute('href') === '#' + entry.target.id) {
-                link.style.color = '#047857';
-              }
+              if (link.getAttribute('href') === '#' + entry.target.id) link.style.color = '#047857';
             });
           }
         });
       }, { threshold: 0.4 });
-
       sections.forEach(s => sectionObserver.observe(s));
 
-    }); // end DOMContentLoaded
+      /* ---- Brand tab switching ---- */
+      const tabBtns   = document.querySelectorAll('.brand-tab-btn');
+      const tabPanels = document.querySelectorAll('.brand-panel');
 
-    // ---- RFQ Form Submission (global — called from onclick) ----
-    function handleRFQSubmit() {
-      const name   = document.getElementById('rfq-name').value.trim();
-      const email  = document.getElementById('rfq-email').value.trim();
-      const phone  = document.getElementById('rfq-phone').value.trim();
-      const volume = document.getElementById('rfq-volume').value;
-
-      if (!name || !email || !phone || !volume) {
-        [
-          { el: document.getElementById('rfq-name'),   val: name },
-          { el: document.getElementById('rfq-email'),  val: email },
-          { el: document.getElementById('rfq-phone'),  val: phone },
-          { el: document.getElementById('rfq-volume'), val: volume },
-        ].forEach(({ el, val }) => {
-          if (!val) {
-            el.style.borderColor = '#ef4444';
-            el.addEventListener('input', function clear() {
-              el.style.borderColor = '';
-              el.removeEventListener('input', clear);
-            }, { once: true });
+      function activateTab(targetId) {
+        tabBtns.forEach(b => {
+          b.classList.toggle('active', b.dataset.tab === targetId);
+          b.setAttribute('aria-selected', b.dataset.tab === targetId ? 'true' : 'false');
+        });
+        tabPanels.forEach(p => {
+          const isActive = p.id === 'panel-' + targetId;
+          p.classList.toggle('active', isActive);
+          /* Re-trigger scroll reveals for newly visible panel elements */
+          if (isActive) {
+            p.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+              if (!el.classList.contains('visible')) observer.observe(el);
+            });
           }
+        });
+      }
+
+      tabBtns.forEach(btn => {
+        btn.addEventListener('click', () => activateTab(btn.dataset.tab));
+      });
+
+      /* Expose for footer deep-links */
+      window.switchBrandTab = function(tabId) {
+        activateTab(tabId);
+        /* Optionally scroll to the brands section */
+        const brandsSection = document.getElementById('brands');
+        if (brandsSection) brandsSection.scrollIntoView({ behavior: 'smooth' });
+      };
+
+    }); /* end DOMContentLoaded */
+
+
+    /* ---- RFQ Form Submission ---- */
+    function handleRFQSubmit() {
+      const name      = document.getElementById('rfq-name').value.trim();
+      const email     = document.getElementById('rfq-email').value.trim();
+      const phone     = document.getElementById('rfq-phone').value.trim();
+      const volume    = document.getElementById('rfq-volume').value;
+      const commodity = document.getElementById('rfq-commodity').value;
+
+      const required = [
+        { el: document.getElementById('rfq-name'),      val: name },
+        { el: document.getElementById('rfq-email'),     val: email },
+        { el: document.getElementById('rfq-phone'),     val: phone },
+        { el: document.getElementById('rfq-volume'),    val: volume },
+        { el: document.getElementById('rfq-commodity'), val: commodity },
+      ];
+
+      const invalid = required.filter(f => !f.val);
+      if (invalid.length) {
+        invalid.forEach(({ el }) => {
+          el.style.borderColor = '#ef4444';
+          el.addEventListener('input', function clear() {
+            el.style.borderColor = '';
+            el.removeEventListener('input', clear);
+          }, { once: true });
         });
         return;
       }
@@ -1546,8 +1578,9 @@
       document.getElementById('rfq-form').style.display = 'none';
       const success = document.getElementById('form-success');
       success.style.display = 'block';
-      initIcons(); // re-render the check-circle icon inside the success block
+      initIcons();
     }
+
   </script>
 </body>
 </html>
